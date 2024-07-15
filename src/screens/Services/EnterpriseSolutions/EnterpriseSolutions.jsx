@@ -23,7 +23,7 @@ const EnterpriseSolutions = () => {
             <div className="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
           <img
             alt="team"
-            className="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4"
+            className="flex-shrink-0 rounded-lg w-36 h-36 object-cover object-center sm:mb-0 mb-4"
             src={img1}
           />
           <div className="flex-grow sm:pl-8">
@@ -45,7 +45,7 @@ const EnterpriseSolutions = () => {
             <div className="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
           <img
             alt="team"
-            className="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4"
+            className="flex-shrink-0 rounded-lg w-36 h-36 object-cover object-center sm:mb-0 mb-4"
             src={img2}
           />
           <div className="flex-grow sm:pl-8">
@@ -65,7 +65,7 @@ const EnterpriseSolutions = () => {
             <div className="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
           <img
             alt="team"
-            className="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4"
+            className="flex-shrink-0 rounded-lg w-36 h-36 object-cover object-center sm:mb-0 mb-4"
             src={img3}
           />
           <div className="flex-grow sm:pl-8">
@@ -85,7 +85,7 @@ const EnterpriseSolutions = () => {
             <div className="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
           <img
             alt="team"
-            className="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4"
+            className="flex-shrink-0 rounded-lg w-36 h-36 object-cover object-center sm:mb-0 mb-4"
             src={img4}
           />
           <div className="flex-grow sm:pl-8">

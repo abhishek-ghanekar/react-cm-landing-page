@@ -1,5 +1,7 @@
 import React from 'react'
-
+import Web1 from "../../../assets/services/webdevelopement/web-1.png"
+import Web2 from "../../../assets/services/webdevelopement/web-2.png"
+import Web3 from "../../../assets/services/webdevelopement/web-3.png"
 const WebDevelopement = () => {
   return (
     <div className="w-[95%] h-full bg-[#fefff5] mx-auto rounded-lg mt-8">
@@ -19,7 +21,7 @@ const WebDevelopement = () => {
           <div className="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center">
             <div className="flex flex-col mb-8 lg:items-start items-center">
               <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5">
-                <img src="ui_1.png" />
+                <img src={Web1} />
               </div>
               <div className="flex-grow">
                 <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
@@ -33,7 +35,7 @@ const WebDevelopement = () => {
             </div>
             <div className="flex flex-col mb-8 lg:items-start items-center">
               <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5">
-                <img src="ui_2.png" />
+                <img src={Web2} />
               </div>
               <div className="flex-grow">
                 <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
@@ -47,7 +49,7 @@ const WebDevelopement = () => {
             </div>
             <div className="flex flex-col mb-8 lg:items-start items-center">
               <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5">
-                <img src="ui_3.png" />
+                <img src={Web3} />
               </div>
               <div className="flex-grow">
                 <h2 className="text-gray-900 text-lg title-font font-medium mb-3">

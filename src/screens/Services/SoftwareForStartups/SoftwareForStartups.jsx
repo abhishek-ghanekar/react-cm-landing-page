@@ -8,7 +8,7 @@ const SoftwareForStartups = () => {
     <div className="w-[95%] h-full bg-[#fefff5] mx-auto rounded-lg mt-8">
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto">
-          <div className="flex flex-wrap w-full mb-20 flex-col items-center text-center">
+          <div className="flex flex-wrap w-full mb-12 flex-col items-center text-center">
             <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
               Software For Startups
             </h1>
@@ -23,7 +23,7 @@ const SoftwareForStartups = () => {
             <div className="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
           <img
             alt="team"
-            className="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4"
+            className="flex-shrink-0 rounded-lg w-36 h-36 object-cover object-center sm:mb-0 mb-4"
             src={img1}
           />
           <div className="flex-grow sm:pl-8">
@@ -44,7 +44,7 @@ const SoftwareForStartups = () => {
             <div className="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
           <img
             alt="team"
-            className="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4"
+            className="flex-shrink-0 rounded-lg w-36 h-36 object-cover object-center sm:mb-0 mb-4"
             src={img2}
           />
           <div className="flex-grow sm:pl-8">
@@ -64,7 +64,7 @@ const SoftwareForStartups = () => {
             <div className="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
           <img
             alt="team"
-            className="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4"
+            className="flex-shrink-0 rounded-lg w-36 h-36 object-cover object-center sm:mb-0 mb-4"
             src={img3}
           />
           <div className="flex-grow sm:pl-8">
@@ -82,11 +82,17 @@ const SoftwareForStartups = () => {
             </div>
             <div className="xl:w-1/2 md:w-1/2 p-4">
             <div className="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
-          <img
+                
+
+
+                <img
             alt="team"
-            className="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4"
+            className="flex-shrink-0 rounded-lg w-36 h-36 object-cover object-center sm:mb-0 mb-4"
             src={img4}
           />
+
+               
+          
           <div className="flex-grow sm:pl-8">
             <h2 className="title-font font-medium text-lg text-gray-900">
               Funding Pitch Supports
