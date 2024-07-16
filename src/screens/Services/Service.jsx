@@ -11,9 +11,20 @@ const Service = () => {
   return (
     <>
   <div className="bg-[#282828] ">
-    <Navbar/>
-    {/* hero section */}
-    <ServicesHero/>
+    <div className='grid-yellow-overlay'>
+    <div className='dark-layer'>
+      {/* <div className='yellow-services-layer'> */}
+
+        <div className='md:p-5'>
+          
+        <Navbar/>
+
+        <ServicesHero/>
+
+        </div>
+      {/* </div> */}
+    </div>
+    </div>
     <UiHero/>
     <SoftwareForStartups/>
     <WebDevelopement/>

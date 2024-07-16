@@ -6,7 +6,7 @@ import Service4 from "../../../assets/services/services_page_4.png"
 const ServicesHero = () => {
   return (
     <section className="text-gray-600 body-font">
-      <div className="container px-5 py-24 mx-auto">
+      <div className="container px-5 py-16 mx-auto">
       <div className="flex flex-wrap w-full mb-20 flex-col items-center text-center">
         <h1 className="gradient-text sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
           Services

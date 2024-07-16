@@ -5,8 +5,8 @@ const Navbar = () => {
   return (
     <header
     id="navbar"
-      className="text-gray-600 body-font  text-white"
-      style={{ background: "rgba(55, 55, 55,0.5)" }}
+      className=" body-font  text-white"
+      // style={{ background: "rgba(55, 55, 55,0.5)" }}
     >
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
         <Link
@@ -30,11 +30,14 @@ const Navbar = () => {
             About
           </Link>
         </nav>
+        
+
         <Link to="/contact">
-          <button className="inline-flex text-black items-center bg-[#373737] text-white font-thin   border-0 py-1 px-3 focus:outline-none bg-black  rounded text-base mt-4 md:mt-0">
+          <button className="inline-flex text-black items-center bg-[#373737] text-white font-thin   border-0 py-1 px-3 focus:outline-none bg-black  rounded text-base mt-4 md:mt-0 z-50">
             Contact Us
           </button>
         </Link>
+        
       </div>
     </header>
   )

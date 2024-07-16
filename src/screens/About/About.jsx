@@ -9,9 +9,11 @@ import MeetTheTeam from './MeetTheTeam/MeetTheTeam'
 const About = () => {
   return (
     <>
-  <div className="bg-[#282828]">
-    <Navbar/>
-    <AboutHero/>
+  <div className='md:p-5'>
+    <div className="bg-[#282828] md:rounded-xl">
+      <Navbar/>
+      <AboutHero/>
+    </div>
   </div>
   <WhyChooseUs/>
   <CoreValues/>

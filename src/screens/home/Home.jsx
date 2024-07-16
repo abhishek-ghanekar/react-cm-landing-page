@@ -9,10 +9,25 @@ import SuccessStories from './SuccessStories/SuccessStories'
 const Home = () => {
   return (
     <>
-  <div className="bg-[#373737] grid-overlay">
-    <Navbar/>
-    <Hero/>
-  </div>
+    <div className='bg-[#fefff5] md:p-5'>
+
+      <div className="bg-[#282828] md:rounded-xl ">
+        <div className='grid-overlay md:rounded-xl'>
+
+        <div className='yellow-layer md:rounded-xl'>
+        <div className='dark-layer md:rounded-xl relative'>
+          {/* <div className='bg-[#fefff5] w-32 h-20 absolute top-0 right-0 z-20 rounded-bl-xl z-0'>
+            
+          </div> */}
+          <Navbar/>
+          <Hero/>
+
+        </div>
+        </div>
+
+        </div>
+      </div>
+    </div>
     <WorkWithUs/>
     <Services/>
     <SuccessStories/>

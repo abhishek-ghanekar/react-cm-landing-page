@@ -3,18 +3,18 @@ import CountUp from 'react-countup';
 const Hero = () => {
   return (
     <section
-      className=" body-font bg-[#373737] text-white "
-      style={{
-        background:
-          "radial-gradient(circle at center, rgba(160, 184, 18, 0.2) 10%,rgba(55, 55, 55,0.8) 60%)"
-      }}
+      className=" body-font  text-white "
+      // style={{
+      //   background:
+      //     "#282828"
+      // }}
     >
       <div className="container mx-auto flex px-5 py-20 items-center justify-center flex-col">
         {/* <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600"> */}
         <div className="text-center lg:w-2/3 w-full">
           <h1 className="title-font sm:text-6xl text-3xl mb-4 font-medium">
-            Your <span className="text-[#B5D202]">Vision</span>, Our  
-            <span className="text-[#B5D202]"> Expertise</span>
+            Your <span className="gradient-text">Vision</span>, Our  
+            <span className="gradient-text"> Expertise</span>
           </h1>
           <p className="mb-8 leading-relaxed font-thin">
             We go beyond code. CodeMischief becomes your software partner,
