@@ -8,14 +8,15 @@ const EnterpriseSolutions = () => {
     <div className="w-[95%] h-full bg-[#fefff5] mx-auto rounded-lg mt-8">
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto">
-          <div className="flex flex-wrap w-full mb-20 flex-col items-center text-center">
-            <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
-              Enterprise Solutions
+        <div className="flex flex-wrap w-full mb-12 sm:flex-row flex-col sm:justify-between ">
+            <div className='relative'>
+            <h1 className='font-bold absolute text-[80px] top-[-60px] text-[#363636] opacity-10	'>02</h1>
+            <h1 className="sm:text-text-[41px]  text-[41px] font-medium title-font mb-2 text-[#363636]">
+            Enterprise Solutions
             </h1>
+            </div>
             <p className="lg:w-1/2 w-full leading-relaxed text-gray-500">
-            At Codemischief, we provide a comprehensive suite of custom
-              enterprise software development services to help you achieve your
-              strategic goals.
+            In today's digital landscape, enterprises need robust software solutions that can adapt and evolve alongside their business. At Codemischief, we provide a comprehensive suite of custom enterprise software development services to help you achieve your strategic goals.
             </p>
           </div>
           <div className="flex flex-wrap -m-4">

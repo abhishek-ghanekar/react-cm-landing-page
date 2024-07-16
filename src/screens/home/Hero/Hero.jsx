@@ -1,5 +1,6 @@
 import React from 'react'
 import CountUp from 'react-countup';
+import { Link } from 'react-router-dom';
 const Hero = () => {
   return (
     <section
@@ -23,9 +24,12 @@ const Hero = () => {
             fast. Let's build something amazing together.
           </p>
           <div className="flex justify-center mb-2">
+            <Link to="/contact">
+            
             <button className="inline-flex text-black font-[400] text-[17px] bg-white border-0 py-4 px-8 focus:outline-none hover:bg-gray-200 rounded text-lg cursor-pointer">
               Start Your Project Today
             </button>
+            </Link>
           </div>
 
 

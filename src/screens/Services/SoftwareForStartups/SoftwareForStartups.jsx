@@ -8,10 +8,13 @@ const SoftwareForStartups = () => {
     <div className="w-[95%] h-full bg-[#fefff5] mx-auto rounded-lg mt-8">
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto">
-          <div className="flex flex-wrap w-full mb-12 flex-col items-center text-center">
-            <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
+          <div className="flex flex-wrap w-full mb-12 sm:flex-row flex-col sm:justify-between ">
+            <div className='relative'>
+            <h1 className='font-bold absolute text-[80px] top-[-60px] text-[#363636] opacity-10	'>02</h1>
+            <h1 className="sm:text-text-[41px]  text-[41px] font-medium title-font mb-2 text-[#363636]">
               Software For Startups
             </h1>
+            </div>
             <p className="lg:w-1/2 w-full leading-relaxed text-gray-500">
               At CodeMischief, we're passionate about helping startups succeed.
               We offer a range of software development services specifically
@@ -37,7 +40,7 @@ const SoftwareForStartups = () => {
             </p>
             
           </div>
-        </div>
+             </div>
               
             </div>
             <div className="xl:w-1/2 md:w-1/2 p-4">

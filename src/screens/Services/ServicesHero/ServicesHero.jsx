@@ -21,16 +21,16 @@ const ServicesHero = () => {
     
         <div className="flex flex-wrap -m-4">
           <div className="xl:w-1/4 md:w-1/2 p-4">
-            <div className="bg-[#363636] p-6 rounded-lg">
+            <div className="bg-[#363636] p-6 rounded-lg hover:bg-[#f2ffa2] transition ease-in-out delay-0 hover:text-black text-white">
               <img
                 className="h-40 rounded w-full object-cover object-center mb-6"
                 src={Service1}
                 alt="content"
               />
-              <h2 className="text-lg text-white font-medium title-font mb-4">
+              <h2 className="text-lg  font-medium title-font mb-4">
                 UI/UX Design
               </h2>
-              <p className="leading-relaxed text-base text-white">
+              <p className="leading-relaxed text-base ">
                 At CodeMischief, we believe exceptional user experience (UX) is
                 the cornerstone of any successful digital product.{" "}
               </p>
@@ -39,16 +39,16 @@ const ServicesHero = () => {
             </div>
           </div>
           <div className="xl:w-1/4 md:w-1/2 p-4">
-            <div className="bg-[#363636] p-6 rounded-lg">
+            <div className="bg-[#363636] p-6 rounded-lg  hover:bg-[#f2ffa2] transition ease-in-out delay-0 hover:text-black text-white">
               <img
                 className="h-40 rounded w-full object-cover object-center mb-6"
                 src={Service2}
                 alt="content"
               />
-              <h2 className="text-lg text-white font-medium title-font mb-4">
+              <h2 className="text-lg  font-medium title-font mb-4">
                 Software for Startups
               </h2>
-              <p className="leading-relaxed text-base text-white">
+              <p className="leading-relaxed text-base ">
                 At CodeMischief, we're passionate about helping startups
                 succeed.{" "}
               </p>
@@ -57,16 +57,16 @@ const ServicesHero = () => {
             </div>
           </div>
           <div className="xl:w-1/4 md:w-1/2 p-4">
-            <div className="bg-[#363636] p-6 rounded-lg">
+            <div className="bg-[#363636] p-6 rounded-lg  hover:bg-[#f2ffa2] transition ease-in-out delay-0 hover:text-black text-white">
               <img
                 className="h-40 rounded w-full object-cover object-center mb-6"
                 src={Service3}
                 alt="content"
               />
-              <h2 className="text-lg text-white font-medium title-font mb-4">
+              <h2 className="text-lg  font-medium title-font mb-4">
                 Web Development
               </h2>
-              <p className="leading-relaxed text-base text-white">
+              <p className="leading-relaxed text-base ">
                 We go beyond just coding. We partner with you to create a
                 website that reflects your brand and achieves your business
                 goals.
@@ -76,16 +76,16 @@ const ServicesHero = () => {
             </div>
           </div>
           <div className="xl:w-1/4 md:w-1/2 p-4">
-            <div className="bg-[#363636] p-6 rounded-lg">
+            <div className="bg-[#363636] p-6 rounded-lg  hover:bg-[#f2ffa2] transition ease-in-out delay-0 hover:text-black text-white">
               <img
                 className="h-40 rounded w-full object-cover object-center mb-6"
                 src={Service4}
                 alt="content"
               />
-              <h2 className="text-lg text-white font-medium title-font mb-4">
+              <h2 className="text-lg  font-medium title-font mb-4">
                 Enterprise Solutions
               </h2>
-              <p className="leading-relaxed text-base text-white">
+              <p className="leading-relaxed text-base ">
                 In today's digital landscape, enterprises need robust software
                 solutions that can adapt and evolve alongside their business.{" "}
               </p>

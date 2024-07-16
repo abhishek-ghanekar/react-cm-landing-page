@@ -32,9 +32,9 @@ const MeetTheTeam = () => {
                 boxShadow: '0 1.2px 0 1.2px #ffffff'
             }}
 >  
-<div className='text-[13px]'>
+<div className='text-[12px] mt-[3px]'>
 
-<h1 className='text-[15px] font-medium'>Ramakrishna Adiyodi</h1>
+<h1 className='text-[14px] font-medium'>Ramakrishna Adiyodi</h1>
 
 <p>Managing Director</p>
 </div>
@@ -57,9 +57,9 @@ const MeetTheTeam = () => {
                 boxShadow: '0 1.2px 0 1.2px #ffffff'
             }}
 >  
-<div className='text-[13px]'>
+<div className='text-[12px] mt-[3px]'>
 
-<h1 className='text-[15px] font-medium'>Prashant Adiyodi</h1>
+<h1 className='text-[14px] font-medium'>Prashant Adiyodi</h1>
 
 <p>Chief Mentor</p>
 </div>
@@ -82,8 +82,8 @@ const MeetTheTeam = () => {
                 boxShadow: '0 1.2px 0 1.2px #ffffff'
             }}
 > 
-             <div className='text-[13px]'>
-              <h1 className='text-[15px] font-medium'>Priyanka Nambiar</h1>
+             <div className='text-[12px] mt-[3px]'>
+              <h1 className='text-[14px] font-medium'>Priyanka Nambiar</h1>
 
               <p>Advisor - Admin and HR</p>
               </div>
@@ -105,8 +105,8 @@ const MeetTheTeam = () => {
                 boxShadow: '0 1.2px 0 1.2px #ffffff'
             }}
 > 
-            <div className='text-[13px]'>
-                <h1 className='text-[15px] font-medium'>Mayuri Pawar</h1>
+            <div className='text-[12px] mt-[3px]'>
+                <h1 className='text-[13px] font-medium'>Mayuri Pawar</h1>
                 <p>Product Manager</p>
             </div>
             </div>
@@ -127,8 +127,8 @@ const MeetTheTeam = () => {
                 boxShadow: '0 1.2px 0 1.2px #ffffff'
             }}
 > 
-            <div className='text-[13px]'>
-              <h1 className='text-[15px] font-medium'>Pareena Mathur</h1>
+            <div className='text-[12px] mt-[3px]'>
+              <h1 className='text-[14px] font-medium'>Pareena Mathur</h1>
 
               <p>Sales And Marketing Manager</p>
               </div>

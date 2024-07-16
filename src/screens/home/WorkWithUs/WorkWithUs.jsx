@@ -1,13 +1,17 @@
 import React from 'react'
 import ManCoffee from "../../../assets/home/man_coffee.png"
+import { Link } from 'react-router-dom'
 const WorkWithUs = () => {
   return (
     <section className="text-gray-600 body-font">
     <div className="container px-5 py-24 mx-auto">
       <div className="flex flex-col text-center w-full mb-10 items-center">
+        <Link to="/contact">
          <button  className=" bg-[#282828] py-4 px-4 text-xs text-white tracking-widest font-[400] title-font mb-1">
         Work With Us
         </button>
+        
+        </Link>
         <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900">
           From <span className='bg-[#f2ffa2] p-[0.5px]'>Idea To Impact</span>: The Codemischief Methodology
         </h1>

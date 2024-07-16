@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import CodemischiefLogo from "../assets/logo/codemischief-logo.png"
 import { Link } from 'react-router-dom'
 const Navbar = () => {
+ 
   return (
     <header
     id="navbar"
@@ -15,20 +16,57 @@ const Navbar = () => {
         >
           <img src={CodemischiefLogo} />
         </Link>
-        <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center font-thin">
-          <Link
-            className="mr-5 hover:text-[#b5d202] cursor-pointer"
-            to="/services"
-          >
-            Services
-          </Link>
-          <a className="mr-5 hover:text-[#b5d202] cursor-pointer">Resources</a>
-          <Link
-            className="mr-5 hover:text-[#b5d202] cursor-pointer"
-            to="/about"
-          >
-            About
-          </Link>
+        <nav className="md:ml-auto md:mr-auto flex md:gap-4 flex-wrap items-center text-base justify-center font-thin">
+          
+            <Link
+              className="mr-5 hover:text-[#b5d202] cursor-pointer"
+              to="/services"
+            >
+              Services
+            </Link>
+             
+          
+          
+            
+            <Link
+              className="mr-5 hover:text-[#b5d202] cursor-pointer"
+              to="/casestudies"
+            >
+              Case Study
+            </Link>
+            <Link
+              className="mr-5 hover:text-[#b5d202] cursor-pointer"
+              to="/blogs"
+            >
+              Blogs
+            </Link>
+            <Link
+              className="mr-5 hover:text-[#b5d202] cursor-pointer"
+              to="/team"
+            >
+              Team
+            </Link>
+            <Link
+              className="mr-5 hover:text-[#b5d202] cursor-pointer"
+              to="/roadmap"
+            >
+              Methodology
+            </Link>
+            <Link
+              className="mr-5 hover:text-[#b5d202] cursor-pointer"
+              to="/careers"
+            >
+              Career
+            </Link>
+            
+             
+          
+          
+          
+    
+            
+            
+          
         </nav>
         
 
