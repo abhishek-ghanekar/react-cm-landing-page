@@ -3,14 +3,14 @@ import img1 from "../../../assets/services/enterprise/img-1.png"
 import img2 from "../../../assets/services/enterprise/img-2.png"
 import img3 from "../../../assets/services/enterprise/img-3.png"
 import img4 from "../../../assets/services/enterprise/img-4.png"
-const EnterpriseSolutions = () => {
+const EnterpriseSolutions = ({enterpriseRef}) => {
   return (
-    <div className="w-[95%] h-full bg-[#fefff5] mx-auto rounded-lg mt-8">
+    <div className="w-[95%] h-full bg-[#fefff5] mx-auto rounded-lg mt-8" ref={enterpriseRef}>
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-wrap w-full mb-12 sm:flex-row flex-col sm:justify-between ">
             <div className='relative'>
-            <h1 className='font-bold absolute text-[80px] top-[-60px] text-[#363636] opacity-10	'>02</h1>
+            <h1 className='font-bold absolute text-[80px] top-[-60px] text-[#363636] opacity-10	'>04</h1>
             <h1 className="sm:text-text-[41px]  text-[41px] font-medium title-font mb-2 text-[#363636]">
             Enterprise Solutions
             </h1>

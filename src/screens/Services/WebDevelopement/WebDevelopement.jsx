@@ -2,9 +2,9 @@ import React from 'react'
 import Web1 from "../../../assets/services/webdevelopement/web-1.png"
 import Web2 from "../../../assets/services/webdevelopement/web-2.png"
 import Web3 from "../../../assets/services/webdevelopement/web-3.png"
-const WebDevelopement = () => {
+const WebDevelopement = ({webRef}) => {
   return (
-    <div className="w-[95%] h-full bg-[#fefff5] mx-auto rounded-lg mt-8">
+    <div className="w-[95%] h-full bg-[#fefff5] mx-auto rounded-lg mt-8" ref={webRef}>
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto flex flex-wrap">
           <div className="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg  flex flex-col justify-space-between">

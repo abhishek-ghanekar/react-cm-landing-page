@@ -3,9 +3,9 @@ import img1 from "../../../assets/services/softwareforstartup/img-1.png"
 import img2 from "../../../assets/services/softwareforstartup/img-2.png"
 import img3 from "../../../assets/services/softwareforstartup/img-3.png"
 import img4 from "../../../assets/services/softwareforstartup/img-4.png"
-const SoftwareForStartups = () => {
+const SoftwareForStartups = ({startupRef}) => {
   return (
-    <div className="w-[95%] h-full bg-[#fefff5] mx-auto rounded-lg mt-8">
+    <div className="w-[95%] h-full bg-[#fefff5] mx-auto rounded-lg mt-8" ref={startupRef}>
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto">
           <div className="flex flex-wrap w-full mb-12 sm:flex-row flex-col sm:justify-between ">

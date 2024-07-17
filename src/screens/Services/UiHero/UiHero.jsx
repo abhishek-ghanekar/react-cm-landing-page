@@ -2,9 +2,9 @@ import React from 'react'
 import UI1 from "../../../assets/services/ui/ui_1.png"
 import UI2 from "../../../assets/services/ui/ui_2.png"
 import UI3 from "../../../assets/services/ui/ui_3.png"
-const UiHero = () => {
+const UiHero = ({uiRef}) => {
   return (
-    <div className="w-[95%] h-full bg-[#fefff5] mx-auto rounded-lg">
+    <div className="w-[95%] h-full bg-[#fefff5] mx-auto rounded-lg" ref={uiRef}>
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-20 mx-auto flex flex-wrap">
           <div className="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg  flex flex-col justify-space-between">

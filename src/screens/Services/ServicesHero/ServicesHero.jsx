@@ -3,7 +3,19 @@ import Service1 from "../../../assets/services/services_page_1.png"
 import Service2 from "../../../assets/services/services_page_2.png"
 import Service3 from "../../../assets/services/services_page_3.png"
 import Service4 from "../../../assets/services/services_page_4.png"
-const ServicesHero = () => {
+const ServicesHero = ({uiRef,startupRef, webRef, enterpriseRef}) => {
+  const scrollToUi = () => {
+    uiRef.current?.scrollIntoView({behavior: 'smooth'});
+  }
+  const scrollToStartup = () => {
+    startupRef.current?.scrollIntoView({behavior: 'smooth'});
+  }
+  const scrollToWeb = () => {
+    webRef.current?.scrollIntoView({behavior: 'smooth'});
+  }
+  const scrollToEnterprise = () => {
+    enterpriseRef.current?.scrollIntoView({behavior: 'smooth'});
+  }
   return (
     <section className="text-gray-600 body-font">
       <div className="container px-5 py-16 mx-auto">
@@ -21,25 +33,28 @@ const ServicesHero = () => {
     
         <div className="flex flex-wrap -m-4">
           <div className="xl:w-1/4 md:w-1/2 p-4">
-            <div className="bg-[#363636] p-6 rounded-lg hover:bg-[#f2ffa2] transition ease-in-out delay-0 hover:text-black text-white">
-              <img
-                className="h-40 rounded w-full object-cover object-center mb-6"
-                src={Service1}
-                alt="content"
-              />
-              <h2 className="text-lg  font-medium title-font mb-4">
-                UI/UX Design
-              </h2>
-              <p className="leading-relaxed text-base ">
-                At CodeMischief, we believe exceptional user experience (UX) is
-                the cornerstone of any successful digital product.{" "}
-              </p>
+            <button onClick={scrollToUi}>
+              <div className="group bg-[#363636] p-6 rounded-lg hover:bg-[#f2ffa2] transition ease-in-out delay-0 hover:text-black text-white cursor-pointer" >
+                <img
+                  className="h-40 rounded w-full object-cover object-center mb-6"
+                  src={Service1}
+                  alt="content"
+                  />
+                <h2 className="text-lg  font-medium title-font mb-4">
+                  UI/UX Design
+                </h2>
+                <p className="leading-relaxed text-base ">
+                  At CodeMischief, we believe exceptional user experience (UX) is
+                  the cornerstone of any successful digital product.{" "}
+                </p>
 
-              <p className='text-[#F2FFA2] mt-2'>Learn More</p>
-            </div>
+                <p className='text-[#F2FFA2] mt-2 group-hover:text-black'>Learn More</p>
+              </div>
+            </button>
           </div>
           <div className="xl:w-1/4 md:w-1/2 p-4">
-            <div className="bg-[#363636] p-6 rounded-lg  hover:bg-[#f2ffa2] transition ease-in-out delay-0 hover:text-black text-white">
+          <button onClick={scrollToStartup}>
+            <div className="group bg-[#363636] p-6 rounded-lg  hover:bg-[#f2ffa2] transition ease-in-out delay-0 hover:text-black text-white cursor-pointer">
               <img
                 className="h-40 rounded w-full object-cover object-center mb-6"
                 src={Service2}
@@ -53,11 +68,13 @@ const ServicesHero = () => {
                 succeed.{" "}
               </p>
 
-              <p className='text-[#F2FFA2] mt-2'>Learn More</p>
+              <p className='text-[#F2FFA2] mt-2 group-hover:text-black'>Learn More</p>
             </div>
+            </button>
           </div>
           <div className="xl:w-1/4 md:w-1/2 p-4">
-            <div className="bg-[#363636] p-6 rounded-lg  hover:bg-[#f2ffa2] transition ease-in-out delay-0 hover:text-black text-white">
+            <button onClick={scrollToWeb}>
+            <div className="bg-[#363636] p-6 rounded-lg  hover:bg-[#f2ffa2] transition ease-in-out delay-0 hover:text-black text-white group cursor-pointer">
               <img
                 className="h-40 rounded w-full object-cover object-center mb-6"
                 src={Service3}
@@ -72,11 +89,13 @@ const ServicesHero = () => {
                 goals.
               </p>
 
-              <p className='text-[#F2FFA2] mt-2'>Learn More</p>
+              <p className='text-[#F2FFA2] mt-2 group-hover:text-black'>Learn More</p>
             </div>
+            </button>
           </div>
           <div className="xl:w-1/4 md:w-1/2 p-4">
-            <div className="bg-[#363636] p-6 rounded-lg  hover:bg-[#f2ffa2] transition ease-in-out delay-0 hover:text-black text-white">
+          <button onClick={scrollToEnterprise}>
+            <div className="bg-[#363636] p-6 rounded-lg  hover:bg-[#f2ffa2] transition ease-in-out delay-0 hover:text-black text-white group cursor-pointer">
               <img
                 className="h-40 rounded w-full object-cover object-center mb-6"
                 src={Service4}
@@ -91,8 +110,9 @@ const ServicesHero = () => {
               </p>
 
 
-              <p className='text-[#F2FFA2] mt-2'>Learn More</p>
+              <p className='text-[#F2FFA2] mt-2 group-hover:text-black'>Learn More</p>
             </div>
+            </button>
 
           </div>
         </div>

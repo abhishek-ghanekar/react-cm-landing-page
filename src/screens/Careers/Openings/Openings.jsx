@@ -9,122 +9,107 @@ const Openings = () => {
     <h1 className='text-[41px] font-bold text-[#CCEA17]'>Open Positions</h1>
 
     </div>
-    <div className="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
-      <div className="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
-        <svg
-          fill="none"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          className="sm:w-16 sm:h-16 w-10 h-10"
-          viewBox="0 0 24 24"
-        >
-          <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
-        </svg>
+    <div className="flex items-center justify-between lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
+      <div className="sm:w-40 sm:h-32 h-20 w-32 sm:mr-10 inline-flex items-center justify-center   text-white flex-shrink-0">
+        <h1 className='text-[30px]'>Engineering</h1>
       </div>
-      <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-        <h2 className="text-gray-900 text-lg title-font font-medium mb-2">
-          Shooting Stars
+      <div className='flex flex-col md:w-2/5 items-start gap-2 justify-center'>
+      <div className="group flex flex-col w-full sm:text-left text-center mt-6 sm:mt-0 hover:bg-white rounded-md hover:text-black text-white pl-3 py-1 relative cursor-pointer transition ease-in-out ">
+        <h2 className=" text-lg title-font font-medium ">
+          Full Stack Developer
         </h2>
-        <p className="leading-relaxed text-base">
-          Blue bottle crucifix vinyl post-ironic four dollar toast vegan
-          taxidermy. Gastropub indxgo juice poutine.
+        <p className="  leading-relaxed text-base text-[#8A8A8A]">
+          Remote | Entry Level
         </p>
-        <a className="mt-3 text-indigo-500 inline-flex items-center">
-          Learn More
-          <svg
-            fill="none"
-            stroke="currentColor"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            className="w-4 h-4 ml-2"
-            viewBox="0 0 24 24"
-          >
-            <path d="M5 12h14M12 5l7 7-7 7" />
-          </svg>
-        </a>
+        <div className="w-5 h-5  items-center justify-center rounded-full bg-[#f2ffa2] text-indigo-500 mb-4 absolute right-3 top-2 hidden group-hover:inline-flex">
+        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M10.5672 0.434136L10.568 7.11365L9.48245 7.11442L9.48245 2.28602L0.819104 10.9494L0.051961 10.1822L8.71531 1.51888L3.88768 1.51964L3.88768 0.433368L10.5672 0.434136Z" fill="#282828"/>
+</svg>
+          </div>
       </div>
+      <div className="group flex flex-col w-full sm:text-left text-center mt-6 sm:mt-0 hover:bg-white rounded-md hover:text-black text-white pl-3 py-1 relative cursor-pointer transition ease-in-out ">
+        <h2 className=" text-lg title-font font-medium ">
+          Devops Engineer
+        </h2>
+        <p className="  leading-relaxed text-base text-[#8A8A8A]">
+          Hybrid | Senior
+        </p>
+        <div className="w-5 h-5  items-center justify-center rounded-full bg-[#f2ffa2] text-indigo-500 mb-4 absolute right-3 top-2 hidden group-hover:inline-flex">
+        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M10.5672 0.434136L10.568 7.11365L9.48245 7.11442L9.48245 2.28602L0.819104 10.9494L0.051961 10.1822L8.71531 1.51888L3.88768 1.51964L3.88768 0.433368L10.5672 0.434136Z" fill="#282828"/>
+</svg>
+          </div>
+      </div>
+      </div>
+     
     </div>
-    <div className="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
-      <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-        <h2 className="text-gray-900 text-lg title-font font-medium mb-2">
-          The Catalyzer
+    <div className="flex items-center justify-between lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
+      <div className="sm:w-40 sm:h-32 h-20 w-32 sm:mr-10 inline-flex items-center justify-start   text-white flex-shrink-0">
+        <h1 className='text-[30px]'>Design</h1>
+      </div>
+      <div className='flex flex-col md:w-2/5 items-start gap-2 justify-center'>
+      <div className="group flex flex-col w-full sm:text-left text-center mt-6 sm:mt-0 hover:bg-white rounded-md hover:text-black text-white pl-3 py-1 relative cursor-pointer transition ease-in-out ">
+        <h2 className=" text-lg title-font font-medium ">
+            UI/UX Designer
         </h2>
-        <p className="leading-relaxed text-base">
-          Blue bottle crucifix vinyl post-ironic four dollar toast vegan
-          taxidermy. Gastropub indxgo juice poutine.
+        <p className="  leading-relaxed text-base text-[#8A8A8A]">
+          Hybrid | Entry Level
         </p>
-        <a className="mt-3 text-indigo-500 inline-flex items-center">
-          Learn More
-          <svg
-            fill="none"
-            stroke="currentColor"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            className="w-4 h-4 ml-2"
-            viewBox="0 0 24 24"
-          >
-            <path d="M5 12h14M12 5l7 7-7 7" />
-          </svg>
-        </a>
+        <div className="w-5 h-5  items-center justify-center rounded-full bg-[#f2ffa2] text-indigo-500 mb-4 absolute right-3 top-2 hidden group-hover:inline-flex">
+        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M10.5672 0.434136L10.568 7.11365L9.48245 7.11442L9.48245 2.28602L0.819104 10.9494L0.051961 10.1822L8.71531 1.51888L3.88768 1.51964L3.88768 0.433368L10.5672 0.434136Z" fill="#282828"/>
+</svg>
+          </div>
       </div>
-      <div className="sm:w-32 sm:order-none order-first sm:h-32 h-20 w-20 sm:ml-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
-        <svg
-          fill="none"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          className="sm:w-16 sm:h-16 w-10 h-10"
-          viewBox="0 0 24 24"
-        >
-          <circle cx={6} cy={6} r={3} />
-          <circle cx={6} cy={18} r={3} />
-          <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12" />
-        </svg>
+      <div className="group flex flex-col w-full sm:text-left text-center mt-6 sm:mt-0 hover:bg-white rounded-md hover:text-black text-white pl-3 py-1 relative cursor-pointer transition ease-in-out ">
+        <h2 className=" text-lg title-font font-medium ">
+           Graphic Designer
+        </h2>
+        <p className="  leading-relaxed text-base text-[#8A8A8A]">
+          Remote | Mid-level
+        </p>
+        <div className="w-5 h-5  items-center justify-center rounded-full bg-[#f2ffa2] text-indigo-500 mb-4 absolute right-3 top-2 hidden group-hover:inline-flex">
+        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M10.5672 0.434136L10.568 7.11365L9.48245 7.11442L9.48245 2.28602L0.819104 10.9494L0.051961 10.1822L8.71531 1.51888L3.88768 1.51964L3.88768 0.433368L10.5672 0.434136Z" fill="#282828"/>
+</svg>
+          </div>
       </div>
+      </div>
+     
     </div>
-    <div className="flex items-center lg:w-3/5 mx-auto sm:flex-row flex-col">
-      <div className="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
-        <svg
-          fill="none"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          className="sm:w-16 sm:h-16 w-10 h-10"
-          viewBox="0 0 24 24"
-        >
-          <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
-          <circle cx={12} cy={7} r={4} />
-        </svg>
+    <div className="flex items-center justify-between lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
+      <div className="sm:w-40 sm:h-32 h-20 w-32 sm:mr-10 inline-flex items-center justify-start   text-white flex-shrink-0">
+        <h1 className='text-[30px]'>Marketing</h1>
       </div>
-      <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-        <h2 className="text-gray-900 text-lg title-font font-medium mb-2">
-          The 400 Blows
+      <div className='flex flex-col md:w-2/5 items-start gap-2 justify-center'>
+      <div className="group flex flex-col w-full sm:text-left text-center mt-6 sm:mt-0 hover:bg-white rounded-md hover:text-black text-white pl-3 py-1 relative cursor-pointer transition ease-in-out ">
+        <h2 className=" text-lg title-font font-medium ">
+           Digital Marketing Specialist
         </h2>
-        <p className="leading-relaxed text-base">
-          Blue bottle crucifix vinyl post-ironic four dollar toast vegan
-          taxidermy. Gastropub indxgo juice poutine.
+        <p className="  leading-relaxed text-base text-[#8A8A8A]">
+          Hyrbid | Senior
         </p>
-        <a className="mt-3 text-indigo-500 inline-flex items-center">
-          Learn More
-          <svg
-            fill="none"
-            stroke="currentColor"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            className="w-4 h-4 ml-2"
-            viewBox="0 0 24 24"
-          >
-            <path d="M5 12h14M12 5l7 7-7 7" />
-          </svg>
-        </a>
+        <div className="w-5 h-5  items-center justify-center rounded-full bg-[#f2ffa2] text-indigo-500 mb-4 absolute right-3 top-2 hidden group-hover:inline-flex">
+        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M10.5672 0.434136L10.568 7.11365L9.48245 7.11442L9.48245 2.28602L0.819104 10.9494L0.051961 10.1822L8.71531 1.51888L3.88768 1.51964L3.88768 0.433368L10.5672 0.434136Z" fill="#282828"/>
+</svg>
+          </div>
       </div>
+      <div className="group flex flex-col w-full sm:text-left text-center mt-6 sm:mt-0 hover:bg-white rounded-md hover:text-black text-white pl-3 py-1 relative cursor-pointer transition ease-in-out ">
+        <h2 className=" text-lg title-font font-medium ">
+           Marketing Manager
+        </h2>
+        <p className="  leading-relaxed text-base text-[#8A8A8A]">
+          Remote | Mid-level
+        </p>
+        <div className="w-5 h-5  items-center justify-center rounded-full bg-[#f2ffa2] text-indigo-500 mb-4 absolute right-3 top-2 hidden group-hover:inline-flex">
+        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M10.5672 0.434136L10.568 7.11365L9.48245 7.11442L9.48245 2.28602L0.819104 10.9494L0.051961 10.1822L8.71531 1.51888L3.88768 1.51964L3.88768 0.433368L10.5672 0.434136Z" fill="#282828"/>
+</svg>
+          </div>
+      </div>
+      </div>
+     
     </div>
     </div>
     

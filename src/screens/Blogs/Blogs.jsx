@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../../components/Navbar'
 import BlogsListing from './BlogsListing'
+import Footer from '../../components/Footer/Footer'
 const Blogs = () => {
   return (
     <div>
@@ -14,7 +15,7 @@ const Blogs = () => {
 
 
         
-
+        <Footer/>
     </div>
   )
 }

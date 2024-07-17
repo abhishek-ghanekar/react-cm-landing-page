@@ -7,17 +7,19 @@ const CaseStudyListings = () => {
   return (
     
       <section className="text-gray-600 body-font">
-        <div className="container px-5 py-24 mx-auto">
-          <div className="flex flex-wrap w-full mb-12 flex-col  text-left">
+        <div className="container px-5 py-24 mx-auto flex flex-col items-center">
+         <div className="flex flex-col  justify-between w-[90%] mb-12 text-left">
             <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
              <ArrowLeftOutlined/> Case Studies
             </h1>
-            <p className="lg:w-1/2 w-full leading-relaxed text-gray-500">
-            Witness real-world transformations fueled by our innovative software solutions. Explore how we empower businesses of all sizes to achieve their goals. Dive into success stories showcasing how we tackled specific challenges and delivered measurable results. See for yourself how Codemischief software can be your partner in achieving success.
+            <p className="w-full leading-relaxed text-gray-500">
+             Witness real-world transformations fueled by our innovative software solutions. Explore how we empower businesses of all sizes to achieve their goals. Dive into success stories showcasing how we tackled specific challenges and delivered measurable results. See for yourself how Codemischief software can be your partner in achieving success.
+
+
             </p>
           </div>
-          <div className="flex flex-col items-center -m-4">
-            <div className="xl:w-1/2 md:w-1/2 p-4">
+          <div className="flex flex-col items-center -m-4 w-[90%]">
+            <div className="xl:w-[70%] md:w-[70%] p-4">
             <section className="text-gray-600 body-font overflow-hidden ">
   <div className="container  px-5  mx-auto">
     <div className="w-full bg-[#282828] rounded-md p-4 mx-auto flex flex-wrap">
@@ -61,7 +63,7 @@ const CaseStudyListings = () => {
 </section>
               
             </div>
-            <div className="xl:w-1/2 md:w-1/2 p-4">
+            <div className="xl:w-[70%] md:w-[70%] p-4">
             <section className="text-gray-600 body-font overflow-hidden ">
   <div className="container  px-5  mx-auto">
     <div className="w-full bg-[#282828] rounded-md p-4 mx-auto flex flex-wrap">
