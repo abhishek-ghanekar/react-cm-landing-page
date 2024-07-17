@@ -79,30 +79,22 @@ const Footer = () => {
     <div className="border-t border-gray-200">
       <div className="container px-5 py-8 flex flex-wrap mx-auto items-center">
         <div className="flex md:flex-nowrap flex-wrap justify-center items-end md:justify-start">
-          <div className="relative sm:w-64 w-40 sm:mr-4 mr-2">
-            <label
-              htmlFor="footer-field"
-              className="leading-7 text-sm text-gray-600"
-            >
-              Email
-            </label>
-            <input
-              type="text"
-              id="footer-field"
-              name="footer-field"
-              className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:ring-2 focus:bg-transparent focus:ring-indigo-200 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-            />
-          </div>
-          <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">
-            Subscribe
-          </button>
-          <p className="text-gray-500 text-sm md:ml-6 md:mt-0 mt-2 sm:text-left text-center">
-            Subscribe
-            <br className="lg:block hidden" />
-            To Our Newsletter
+          
+          <p className="inline-flex  border-0 py-2 px-6 focus:outline-none text-[#FEFFF5] rounded  cursor-pointer">
+            Subscribe To Our Newsletter
           </p>
+          
         </div>
-        <span className="inline-flex lg:ml-auto lg:mt-0 mt-6 w-full justify-center md:justify-start md:w-auto">
+        <span className="inline-flex lg:ml-auto gap-2 lg:mt-0 mt-6 w-full justify-center md:justify-start md:w-auto">
+          <div className='flex items-center'>
+
+            <div className='h-[80%] flex flex-col justify-center text-center'>
+              <p className="inline-flex text-[#FEFFF5] border-0 py-2 px-6 focus:outline-none rounded">
+                info@codemischief.tech &nbsp; &nbsp; &nbsp; +91 9584467960
+              </p>
+            </div>
+
+          </div>
           <button onClick={() => {
             window.scrollTo({top : 0, behavior : 'smooth'})
           }}>
