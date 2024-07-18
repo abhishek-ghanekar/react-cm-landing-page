@@ -14,8 +14,12 @@ import {
   Collapse,
   initTWE,
 } from "tw-elements";
+import useFetch from './hooks/useFetch'
+import IndividualBlog from './screens/Blogs/IndividualBlog/IndividualBlog'
 
 function App() {
+  const {loading,error,data} = useFetch("http://localhost:1337/api/blogs")
+  console.log(data)
   useEffect(() => {
 
     initTWE({ Collapse });
@@ -32,6 +36,7 @@ function App() {
           <Route path='/casestudies' element={<CaseStudies/>}/>
           <Route path='/roadmap' element={<Roadmap/>}/>
           <Route path='/blogs' element={<Blogs/>}/>
+          <Route path='/blog/:id' element={<IndividualBlog/>}/>
        </Routes>
     </BrowserRouter>
     

@@ -1,11 +1,22 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { ArrowRightOutlined, ArrowLeftOutlined } from '@ant-design/icons'
 import { Link } from 'react-router-dom'
 import Case1 from "../../assets/home/case-study-1.png"
-
+import Markdown from 'react-markdown'
+import useFetch from '../../hooks/useFetch'
+import axios from "axios"
+import remarkGfm from 'remark-gfm';
 const CaseStudyListings = () => {
-  return (
+  
+  useEffect(() => {
     
+  },[])
+
+  return (
+    //  <div className='markdown-container'>
+    //   {console.log(mardownText)}
+    //   <Markdown remarkPlugins={[remarkGfm]}>{mardownText}</Markdown>
+    //  </div>
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto flex flex-col items-center">
          <div className="flex flex-col  justify-between w-[90%] mb-12 text-left">
@@ -19,6 +30,7 @@ const CaseStudyListings = () => {
             </p>
           </div>
           <div className="flex flex-col items-center -m-4 w-[90%]">
+            {/* we can map thru the case studies here */}
             <div className="xl:w-[70%] md:w-[70%] p-4">
             <section className="text-gray-600 body-font overflow-hidden ">
   <div className="container  px-5  mx-auto">

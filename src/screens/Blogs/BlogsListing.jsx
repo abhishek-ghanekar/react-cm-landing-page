@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Case1 from "../../assets/home/case-study-1.png"
 import { ArrowLeftOutlined , ArrowRightOutlined} from '@ant-design/icons'
 import { Link } from 'react-router-dom'
@@ -6,7 +6,20 @@ import Blog1 from "../../assets/blogs/blog-1.svg"
 import Blog2 from "../../assets/blogs/blog-2.svg"
 import Blog3 from "../../assets/blogs/blog-3.svg"
 import Blog4 from "../../assets/blogs/blog-4.svg"
+import axios from 'axios'
+import { useEffect } from 'react'
 const BlogsListing = () => {
+  const [pageNumber,setPageNumber] = useState(1);
+  const [blogs,setBlogs] = useState([])
+  useEffect(() => {
+    axios.get(`http://localhost:1337/api/blogs?populate=*pagination[page]=${pageNumber}&pagination[pageSize]=9`).then(result => {
+     console.log(result)
+     setBlogs(result.data.data)
+     console.log(result.data.data)
+    }).catch(err=> {
+     console.log(err)
+    }) 
+   },[])
   return (
     <section className="text-gray-600 body-font">
         <div className="container px-5 pt-12 mx-auto flex flex-col items-center">
@@ -24,259 +37,44 @@ const BlogsListing = () => {
             <section className="text-gray-600 body-font overflow-hidden ">
         <div className="container  px-5  mx-auto">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-        <div class="p-4">
-        <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-          <img
-            className="lg:h-48 md:h-36 w-full  object-center"
-            src={Blog1}
-            alt="blog"
-          />
-          <div className="p-6">
+          {blogs.map((item,index) => {
             
-            <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-            5 Essential Habits to Avoid on Your Development Journey
-            </h1>
-            
-            <div className="flex items-center flex-wrap ">
-              <a className="text-[#8A8A8A] text-[17px] inline-flex items-center md:mb-2 lg:mb-0">
-              May 21, 2024
+            {console.log(`http://localhost:1337${item.attributes.CoverImage.data.attributes.formats.medium.url}`)}
+            return <Link to={`/blog/${item.id}`}>
+             <div class="p-4">
+            <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+              <img
+                className="lg:h-48 md:h-36 w-full object-fill  object-center"
+                src={`http://localhost:1337${item.attributes.CoverImage.data.attributes.formats.medium.url}`}
+                alt="blog"
+              />
+              <div className="p-6">
                 
-              </a>
-              <span className="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 ">
+                <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
+                {item.attributes.Title}
+                </h1>
                 
-                2 mins read
-              </span>
-              
+                <div className="flex items-center flex-wrap ">
+                  <a className="text-[#8A8A8A] text-[17px] inline-flex items-center md:mb-2 lg:mb-0">
+                  {item.attributes.published}
+                    
+                  </a>
+                  <span className="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 ">
+                    
+                  {item.attributes.TimeToRead}
+                  </span>
+                  
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-
-
-        </div>
-        <div class="p-4">
-
-        <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-          <img
-            className="lg:h-48 md:h-36 w-full  object-center"
-            src={Blog2}
-            alt="blog"
-          />
-          <div className="p-6">
-            
-            <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-            CI/CD Pipelines: The Secret Sauce for Dev Rockstars
-            </h1>
-            
-            <div className="flex items-center flex-wrap ">
-            <a className="text-[#8A8A8A] text-[17px] inline-flex items-center md:mb-2 lg:mb-0">
-              May 21, 2024
-                
-              </a>
-              <span className="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 ">
-                
-                 2 mins read
-              </span>
-              
+  
+  
             </div>
-          </div>
-        </div>
-        </div>
-        <div class="p-4">
-
-<div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-  <img
-    className="lg:h-48 md:h-36 w-full  object-center"
-    src={Blog3}
-    alt="blog"
-  />
-  <div className="p-6">
-    
-    <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-    The Full-Stack Security Stack: Building Impregnable Applications
-    </h1>
-    
-    <div className="flex items-center flex-wrap ">
-    <a className="text-[#8A8A8A] text-[17px] inline-flex items-center md:mb-2 lg:mb-0">
-              May 21, 2024
-                
-              </a>
-      <span className="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 ">
-        
-       2 mins read
-      </span>
-      
-    </div>
-  </div>
-</div>
-</div>
-<div class="p-4">
-
-<div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-  <img
-    className="lg:h-48 md:h-36 w-full object-cover object-center"
-    src={Blog4}
-    alt="blog"
-  />
-  <div className="p-6">
-    
-    <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-       Unique Websites for Developers: Boost Your Workflow and Skills
-    </h1>
-
-    <div className="flex items-center flex-wrap ">
-    <a className="text-[#8A8A8A] text-[17px] inline-flex items-center md:mb-2 lg:mb-0">
-              May 21, 2024
-                
-              </a>
-      <span className="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 ">
-       
-        2 mins read
-      </span>
-      
-    </div>
-  </div>
-</div>
-</div>
-<div class="p-4">
-
-<div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-  <img
-    className="lg:h-48 md:h-36 w-full object-cover object-center"
-    src={Blog2}
-    alt="blog"
-  />
-  <div className="p-6">
-    
-    <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-    CI/CD Pipelines: The Secret Sauce for Dev Rockstars
-    </h1>
-    
-    <div className="flex items-center flex-wrap ">
-    <a className="text-[#8A8A8A] text-[17px] inline-flex items-center md:mb-2 lg:mb-0">
-              May 21, 2024
-                
-              </a>
-      <span className="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 ">
-        
-       2 mins read
-      </span>
-      
-    </div>
-  </div>
-</div>
-</div>
-<div class="p-4">
-
-<div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-  <img
-    className="lg:h-48 md:h-36 w-full object-cover object-center"
-    src={Blog3}
-    alt="blog"
-  />
-  <div className="p-6">
-    
-    <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-       The Full-Stack Security Stack: Building Impregnable Applications
-    </h1>
-    
-    <div className="flex items-center flex-wrap ">
-    <a className="text-[#8A8A8A] text-[17px] inline-flex items-center md:mb-2 lg:mb-0">
-              May 21, 2024
-                
-              </a>
-      <span className="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 ">
-        
-        2 mins read
-      </span>
-      
-    </div>
-  </div>
-</div>
-</div>
-<div class="p-4">
-
-<div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-  <img
-    className="lg:h-48 md:h-36 w-full object-cover object-center"
-    src={Blog4}
-    alt="blog"
-  />
-  <div className="p-6">
-    
-    <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-       Unique Websites for Developers: Boost Your Workflow and Skills
-    </h1>
-    
-    <div className="flex items-center flex-wrap ">
-    <a className="text-[#8A8A8A] text-[17px] inline-flex items-center md:mb-2 lg:mb-0">
-              May 21, 2024
-                
-              </a>
-      <span className="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 ">
-      2 mins read
-        
-      </span>
-      
-    </div>
-  </div>
-</div>
-</div>
-<div class="p-4">
-
-<div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-  <img
-    className="lg:h-48 md:h-36 w-full object-cover object-center"
-    src={Blog2}
-    alt="blog"
-  />
-  <div className="p-6">
-    
-    <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-       CI/CD Pipelines: The Secret Sauce for Dev Rockstars
-    </h1>
-    
-    <div className="flex items-center flex-wrap ">
-    <a className="text-[#8A8A8A] text-[17px] inline-flex items-center md:mb-2 lg:mb-0">
-              May 21, 2024
-                
-              </a>
-      <span className="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-       
-      2 mins read
-      </span>
-      
-    </div>
-  </div>
-</div>
-</div>
-<div class="p-4">
-
-<div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-  <img
-    className="lg:h-48 md:h-36 w-full object-cover object-center"
-    src={Blog3}
-    alt="blog"
-  />
-  <div className="p-6">
-   
-    <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-      The Full-Stack Security Stack: Building Impregnable Applications
-    </h1>
-    
-    <div className="flex items-center flex-wrap ">
-    <a className="text-[#8A8A8A] text-[17px] inline-flex items-center md:mb-2 lg:mb-0">
-              May 21, 2024
-                
-              </a>
-      <span className="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 ">
-        
-        2 mins read
-      </span>
-      
-    </div>
-  </div>
-</div>
-</div>
+                          
+            </Link>
+          })}
+          
+          
         </div>
   </div>
 </section>
