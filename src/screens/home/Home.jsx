@@ -28,10 +28,16 @@ const Home = () => {
         </div>
       </div>
     </div>
+    <div className='bg-white'>
+
     <WorkWithUs/>
     <Services/>
     <SuccessStories/>
+    
+
+
     <Footer/>
+    </div>
 </>
 
   )

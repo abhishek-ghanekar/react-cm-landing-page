@@ -41,8 +41,7 @@ const WhyChooseUs = () => {
                 Agile &amp; Iterative Development
               </h2>
               <p className="leading-relaxed">
-                Vice migas literally kitsch +1 pok pok. Truffaut hot chicken
-                slow-carb health goth, vape typewriter.
+                 We work closely with you throughout the development process to ensure timely delivery and continuous improvement.
               </p>
             </div>
           </div>
@@ -58,8 +57,7 @@ const WhyChooseUs = () => {
                 Focus on ROI
               </h2>
               <p className="leading-relaxed">
-                Coloring book nar whal glossier master cleanse umami. Salvia +1
-                master cleanse blog taiyaki.
+                 We believe software should be an investment, not a cost. We focus on developing solutions that deliver tangible results and a strong return on investment (ROI).
               </p>
             </div>
           </div>
@@ -75,8 +73,7 @@ const WhyChooseUs = () => {
                 Expert Team
               </h2>
               <p className="leading-relaxed">
-                VHS cornhole pop-up, try-hard 8-bit iceland helvetica. Kinfolk
-                bespoke try-hard cliche palo santo offal.
+                We believe software should be an investment, not a cost. We focus on developing solutions that deliver tangible results and a strong return on investment (ROI).
               </p>
             </div>
           </div>
@@ -89,8 +86,7 @@ const WhyChooseUs = () => {
                 Transparent Communication
               </h2>
               <p className="leading-relaxed">
-                Pitchfork ugh tattooed scenester echo park gastropub whatever
-                cold-pressed retro.
+                  We believe in clear and consistent communication throughout the project lifecycle.
               </p>
             </div>
           </div>

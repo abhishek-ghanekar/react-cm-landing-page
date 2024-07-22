@@ -1,6 +1,9 @@
 import React from 'react'
 import ManCoffee from "../../../assets/home/man_coffee.png"
+import {motion} from "framer-motion"
 import { Link } from 'react-router-dom'
+import FadeUpBounce from '../../../animations/FadeUpBounce.jsx'
+
 const WorkWithUs = () => {
   return (
     <section className="text-gray-600 body-font">
@@ -16,11 +19,15 @@ const WorkWithUs = () => {
           From <span className='bg-[#f2ffa2] p-[0.5px]'>Idea To Impact</span>: The Codemischief Methodology
         </h1>
         
+        
 
-        <img src={ManCoffee} className="w-full mt-4 sm:w-[30%]" />
+        <img src={ManCoffee} className="w-full mt-4  sm:w-[80%] md:w-[50%] lg:w-[30%]" />
+        
       </div>
-      <div className="flex flex-wrap -m-4">
-        <div className="p-4 md:w-1/3">
+      <div  className="flex flex-wrap -m-4">
+        <div
+        className="p-4 md:w-1/3">
+          <FadeUpBounce>
           <div className="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
             <div className="flex items-center mb-3">
               <div className="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-[#A0B812] text-white flex-shrink-0">
@@ -39,8 +46,10 @@ const WorkWithUs = () => {
              
             </div>
           </div>
+          </FadeUpBounce>
         </div>
         <div className="p-4 md:w-1/3">
+        <FadeUpBounce>
           <div className="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
             <div className="flex items-center mb-3">
               <div className="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-[#A0B812] text-white flex-shrink-0">
@@ -60,8 +69,10 @@ const WorkWithUs = () => {
              
             </div>
           </div>
+          </FadeUpBounce>
         </div>
         <div className="p-4 md:w-1/3">
+        <FadeUpBounce>
           <div className="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
             <div className="flex items-center mb-3">
               <div className="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-[#A0B812] text-white flex-shrink-0">
@@ -81,6 +92,7 @@ const WorkWithUs = () => {
              
             </div>
           </div>
+          </FadeUpBounce>
         </div>
       </div>
     </div>

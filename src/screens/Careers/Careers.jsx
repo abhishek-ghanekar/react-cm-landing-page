@@ -9,6 +9,9 @@ import Openings from './Openings/Openings'
 const Careers = () => {
   return (
     <>
+    <div className='bg-white'>
+
+    
     <div className='bg-[#282828]'>
       <Navbar/>
 
@@ -26,7 +29,7 @@ const Careers = () => {
     </div>
     </div>
     <Footer/>
-    
+    </div>
     </>
   )
 }

@@ -6,19 +6,22 @@ const ContactHero = () => {
     <div className="container px-5 py-8 mx-auto flex sm:flex-nowrap flex-wrap">
       <div className="lg:w-2/3 md:w-1/2  rounded-lg overflow-hidden sm:mr-10 p-10 flex items-start justify-start relative">
          
-      <div className="flex flex-col mb-8 lg:items-start items-center">
+          <div className="h-full flex flex-col mb-8 lg:items-start items-center lg:justify-between">
              
                 
               
               <div className="flex-grow">
-                <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
+                <h2 className="text-gray-900 text-[33px] title-font font-bold mb-3">
                   Start Your Journey with Us
                 </h2>
                 <p className="leading-relaxed text-base">
                    Unlock your business's potential with Codemischief, where passion and expertise create powerful, tailored software solutions.
                 </p>
               </div>
+              <div className='lg:align-bottom'>
+
               <img src={Contact1} />
+              </div>
             </div>
       
       </div>

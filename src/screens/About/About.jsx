@@ -9,6 +9,9 @@ import MeetTheTeam from './MeetTheTeam/MeetTheTeam'
 const About = () => {
   return (
     <>
+    <div className='bg-white'>
+
+
   <div className='md:p-5'>
     <div className="bg-[#282828] md:rounded-xl">
       <Navbar/>
@@ -19,6 +22,7 @@ const About = () => {
   <CoreValues/>
   <MeetTheTeam/>
   <Footer/>
+    </div>
 </>
 
   )

@@ -19,7 +19,7 @@ const Footer = () => {
         </button>
         </div>
       </div>
-      <div className="flex-grow flex flex-wrap justify-center -mb-10 md:mt-0 mt-10 md:text-left text-center">
+      <div className="flex-grow flex flex-wrap justify-end -mb-10 md:mt-0 mt-10 md:text-left text-center">
         <div className="lg:w-1/3 md:w-1/3 w-full px-4">
           <h2 className="title-font font-thin text-white tracking-widest text-sm mb-3">
             Quick Navigation
@@ -80,9 +80,9 @@ const Footer = () => {
       <div className="container px-5 py-8 flex flex-wrap mx-auto items-center">
         <div className="flex md:flex-nowrap flex-wrap justify-center items-end md:justify-start">
           
-          <p className="inline-flex  border-0 py-2 px-6 focus:outline-none text-[#FEFFF5] rounded  cursor-pointer">
+          {/* <p className="inline-flex  border-0 py-2 px-6 focus:outline-none text-[#FEFFF5] rounded  cursor-pointer">
             Subscribe To Our Newsletter
-          </p>
+          </p> */}
           
         </div>
         <span className="inline-flex lg:ml-auto gap-2 lg:mt-0 mt-6 w-full justify-center md:justify-start md:w-auto">
@@ -90,7 +90,7 @@ const Footer = () => {
 
             <div className='h-[80%] flex flex-col justify-center text-center'>
               <p className="inline-flex text-[#FEFFF5] border-0 py-2 px-6 focus:outline-none rounded">
-                info@codemischief.tech &nbsp; &nbsp; &nbsp; +91 9584467960
+                info@codemischief.tech &nbsp; &nbsp; &nbsp; +91 79728 04023
               </p>
             </div>
 
@@ -99,7 +99,7 @@ const Footer = () => {
             window.scrollTo({top : 0, behavior : 'smooth'})
           }}>
             {/* <img src={UpArrow}/> */}
-            <div className='bg-[#363636] rounded-xl p-4'>
+            <div className='bg-[#363636] rounded-full p-4'>
 
             <ArrowUpOutlined />
             </div>

@@ -4,7 +4,7 @@ import BlogsListing from './BlogsListing'
 import Footer from '../../components/Footer/Footer'
 const Blogs = () => {
   return (
-    <div>
+    <div className='bg-white'>
         <div className='bg-[#282828]'>
 
             <Navbar/>

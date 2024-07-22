@@ -4,7 +4,7 @@ import CaseStudyListings from './CaseStudyListings'
 
 const CaseStudies = () => {
   return (
-    <div>
+    <div className='bg-white'>
         <div className='bg-[#282828]'>
             <Navbar/>
         </div>

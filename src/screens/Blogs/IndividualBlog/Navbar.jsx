@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import CodeMischiefLogo from "../assets/logo/codemischief-logo.png"
+import CodeMischiefLogo from "../../../assets/logo/codemischief-logo.png"
 import { Link } from 'react-router-dom';
 const Navbar = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -25,11 +25,11 @@ const Navbar = () => {
         <div className="hidden lg:flex items-center space-x-8">
             <Link to='/services'>
             
-                <a href="#" className="text-white hover:underline hover:underline-offset-2 hover:decoration-[#ccea17] transition duration-300 ease-in-out">Services</a>
+                <a href="#" className="text-white hover:text-gray-300">Services</a>
             </Link>
           <div className="relative group">
-            <button className="text-white hover:underline-offset-2 hover:decoration-[#ccea17] transition duration-300 ease-in-out focus:outline-none">Resources</button>
-            <div className="absolute left-0  w-48 bg-[#ccea17] rounded-md shadow-lg py-2 z-20 hidden group-hover:block group-hover:visible ">
+            <button className="text-white hover:text-gray-300 focus:outline-none">Resources</button>
+            <div className="absolute left-0  w-48 bg-white rounded-md shadow-lg py-2 z-20 hidden group-hover:block group-hover:visible">
                 <Link
                  to="/casestudies"
                 >
@@ -44,8 +44,8 @@ const Navbar = () => {
             </div>
           </div>
           <div className="relative group">
-            <button className="text-white hover:underline-offset-2 hover:decoration-[#ccea17] transition duration-300 ease-in-out  focus:outline-none">About</button>
-            <div className="absolute left-0  w-48 bg-[#ccea17] rounded-md shadow-lg py-2 z-20 hidden group-hover:block group-hover:visible">
+            <button className="text-white hover:text-gray-300 focus:outline-none">About</button>
+            <div className="absolute left-0  w-48 bg-white rounded-md shadow-lg py-2 z-20 hidden group-hover:block group-hover:visible">
                 <Link to="/team">
                 
               <a href="#" className="block px-4 py-2 text-gray-800 hover:bg-gray-200">Team</a>

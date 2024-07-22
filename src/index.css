@@ -10,6 +10,7 @@
 }
 body {
     font-family: 'CustomFont';
+    background-color: #282828;
 }
 
 .grid-overlay {
@@ -101,3 +102,5 @@ background: radial-gradient(ellipse at center,
   padding: 0.2em 0.4em;
   border-radius: 3px;
 }
+
+

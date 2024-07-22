@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from 'react'
-import Navbar from '../../../components/Navbar'
+// import Navbar from '../../../components/Navbar'
+import Navbar from './Navbar'
 import { useParams } from 'react-router-dom'
 import axios from 'axios'
 import Markdown from 'react-markdown'
+import Footer from '../../../components/Footer/Footer'
+import formatDate from '../../../utils/ConvertDate'
 const IndividualBlog = () => {
 
     const {id} = useParams();
@@ -17,8 +20,67 @@ const IndividualBlog = () => {
             console.log(err)
            }) 
     },[])
+
+    const renderText = (textBlock) => {
+      if (textBlock.bold) {
+        return <strong>{textBlock.text}</strong>;
+      }
+      return textBlock.text;
+    };
+    
+    const renderBlock = (block) => {
+      var headingStyles = ""
+      if(block.level == 1) {
+
+         headingStyles = 'text-3xl font-semibold mt-4 mb-2';
+      }else if(block.level == 2) {
+        
+         headingStyles = 'text-2xl font-semibold mt-4 mb-2';
+      }else if(block.level == 3) {
+        
+         headingStyles = 'text-xl font-semibold mt-4 mb-2';
+      }else if(block.level == 4) {
+        
+         headingStyles = 'text-lg font-semibold mt-4 mb-2';
+      }else if(block.level == 5) {
+        
+         headingStyles = 'text-lg font-semibold mt-4 mb-2';
+      }else if(block.level == 6) {
+         headingStyles = 'text-lg font-semibold mt-4 mb-2';
+      }else {
+        
+         headingStyles = 'font-semibold mt-4 mb-2';
+      }
+    
+      switch (block.type) {
+        case 'heading':
+          const HeadingTag = `h${block.level}`;
+          console.log(HeadingTag)
+          return (
+            <HeadingTag key={block.children[0].text} className={headingStyles}>
+              {block.children.map((child, index) => (
+                <React.Fragment key={index}>{renderText(child)}</React.Fragment>
+              ))}
+            </HeadingTag>
+          );
+        case 'paragraph':
+          return (
+            <p key={block.children[0]?.text || Math.random()} className="mb-4">
+              {block.children.map((child, index) => (
+                <React.Fragment key={index}>{renderText(child)}</React.Fragment>
+              ))}
+            </p>
+          );
+        default:
+          return null;
+      }
+    };
+    const ContentRenderer = ({ blocks }) => {
+      return <div>{blocks?.map(renderBlock)}</div>;
+    };
   return (
-    <div>
+    <div className='bg-white'>
+      
       {/* here we have an individual blog */}
       <div className='bg-[#282828]'>
 
@@ -27,16 +89,19 @@ const IndividualBlog = () => {
       <div className='w-full flex flex-col items-center '>
       <div className='w-[80%]'>
       <img   src={`http://localhost:1337${blogData?.attributes?.CoverImage?.data?.attributes?.formats?.large?.url}`} className='w-full'/>
+      <div className='w-full py-5'>
 
+        <h1 className='text-[41px] font-bold'>{blogData?.attributes?.Title}</h1>
       </div>
-       <div className='flex w-[80%] flex-col-reverse md:flex-row'>
+      </div>
+       <div className='flex w-[80%] flex-col-reverse md:flex-row gap-3 items-center sm:items-start'>
          <div className='w-[20%] h-[200px] '>
              <div className="group flex flex-col w-full sm:text-left text-center mt-6 sm:mt-0  rounded-md  pl-3 py-1 relative  transition ease-in-out ">
                     <p className="  leading-relaxed text-base text-[#8A8A8A]">
                        Published
                     </p>
                     <h2 className=" text-lg title-font font-medium ">
-                      {blogData?.attributes?.published}
+                      {formatDate(blogData?.attributes?.published)}
                     </h2>
         
              </div>
@@ -51,17 +116,19 @@ const IndividualBlog = () => {
              </div>
         
          </div>
-         <div className='w-[80%] h-full  markdown-text'>
-           <Markdown className="w-full">
+         <div className='w-[80%] h-full   py-4 px-1'>
+           {console.log(blogData?.attributes?.BlockContent)}
+           {/* <Markdown className="w-full">
             {blogData?.attributes?.Content}
-           </Markdown>
+           </Markdown> */}
+           <ContentRenderer blocks={blogData?.attributes?.BlockContent}/>
          </div>
        </div>
         
 
 
         {/* up next  */}
-        <div className='w-[80%]'>
+        {/* <div className='w-[80%]'>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
             
                 <div class="p-4">
@@ -152,9 +219,9 @@ const IndividualBlog = () => {
     
                 </div>
             </div>
-        </div>
+        </div> */}
       </div>
-
+      <Footer/>
     </div>
   )
 }

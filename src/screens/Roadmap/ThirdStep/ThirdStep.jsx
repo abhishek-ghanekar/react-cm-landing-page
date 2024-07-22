@@ -1,6 +1,6 @@
 import React from 'react'
 import StepOne from "../../../assets/roadmap/stepone.svg"
-const FirstStep = () => {
+const ThirdStep = () => {
   return (
     <div className="container px-5 py-8 mx-auto flex justify-center">
     <div className="lg:w-4/5 mx-auto flex flex-wrap justify-center">
@@ -13,7 +13,7 @@ const FirstStep = () => {
         <div className='w-full flex gap-2 justify-center md:justify-between items-center'>
 
         <h1 className="text-gray-200 text-[40px] title-font font-bold mb-4 leading-[120%]">
-           01
+           03
         </h1>
         <h1 className="text-gray-900 text-[25px] title-font font-bold mb-4 leading-[120%]">
            Project Kick-Off & Requirements
@@ -21,8 +21,11 @@ const FirstStep = () => {
         </div>
         
        <p className="lg:w-[80%] w-full leading-relaxed text-gray-500">
-            In today's digital landscape, enterprises need robust software solutions that can adapt and evolve alongside their business. At Codemischief, we provide a comprehensive suite of custom enterprise software development services to help you achieve your strategic goals.
-            </p>
+         Automated testing and deployment ensure faster delivery and fewer errors.
+        </p>
+        <p className="lg:w-[80%] w-full leading-relaxed text-gray-500">
+          You have access to a staging environment to test features before deployment.
+        </p>
         
        
       </div>
@@ -33,4 +36,4 @@ const FirstStep = () => {
   )
 }
 
-export default FirstStep
+export default ThirdStep

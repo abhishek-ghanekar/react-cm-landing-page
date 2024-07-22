@@ -22,9 +22,9 @@ const CareerHero = () => {
     </div>
     
   </div>
-  <div className='w-full flex justify-center'>
+  <div className=' w-full flex justify-center'>
 
-  <p className="lg:w-1/2 w-full leading-relaxed text-gray-500">
+  <p className="container  lg:w-1/2 w-full leading-relaxed text-gray-500">
             Witness real-world transformations fueled by our innovative software solutions. Explore how we empower businesses of all sizes to achieve their goals. Dive into success stories showcasing how we tackled specific challenges and delivered measurable results. See for yourself how Codemischief software can be your partner in achieving success.
             </p>
   </div>
