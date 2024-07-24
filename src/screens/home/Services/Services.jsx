@@ -23,7 +23,7 @@ const Services = () => {
       <div className="flex flex-wrap -m-4">
         <div className="xl:w-1/2 md:w-1/2 p-4 ">
         <FadeUpBounce>
-          <div className="border border-gray-200 p-6 rounded-lg bg-[#f2ffa2] h-[250px]">
+          <div className="border border-gray-200 p-6 rounded-lg bg-[#f2ffa2] h-[280px]">
             <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-white text-indigo-500 mb-4">
               <img src={ServiceUiLogo} />
             </div>
@@ -41,7 +41,7 @@ const Services = () => {
         </div>
         <div className="xl:w-1/2 md:w-1/2 p-4">
         <FadeUpBounce>
-          <div className="border border-gray-200 p-6 rounded-lg bg-[#f2ffa2] h-[250px]">
+          <div className="border border-gray-200 p-6 rounded-lg bg-[#f2ffa2] h-[280px]">
             <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-white text-indigo-500 mb-4">
               <img src={ServiceWebLogo} />
             </div>
@@ -60,7 +60,7 @@ const Services = () => {
         </div>
         <div className="xl:w-1/2 md:w-1/2 p-4">
         <FadeUpBounce>
-          <div className="border border-gray-200 p-6 rounded-lg bg-[#f2ffa2] h-[250px]">
+          <div className="border border-gray-200 p-6 rounded-lg bg-[#f2ffa2] h-[280px]">
             <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-white text-indigo-500 mb-4">
               <img src={ServiceStartupLogo} />
             </div>
@@ -78,7 +78,7 @@ const Services = () => {
         </div>
         <div className="xl:w-1/2 md:w-1/2 p-4">
         <FadeUpBounce>
-          <div className="border border-gray-200 p-6 rounded-lg bg-[#f2ffa2] h-[250px]">
+          <div className="border border-gray-200 p-6 rounded-lg bg-[#f2ffa2] h-[280px]">
             <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-white text-indigo-500 mb-4">
               <img src={ServiceEnterpriseLogo} />
             </div>

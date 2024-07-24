@@ -28,14 +28,14 @@ useEffect(() => {
     
     <section className="text-white body-font overflow-hidden w-full ">
   <div className="container px-5 py-8 mx-auto flex justify-center">
-    <div className="lg:w-4/5 bg-[#282828] rounded-lg mx-auto flex flex-wrap justify-center">
+    <div className="lg:w-4/5 w-full  bg-[#282828] rounded-lg mx-auto flex flex-wrap justify-center">
     <div className="lg:w-1/2 px-4 w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0">
         
         <h1 className="text-white text-3xl title-font font-medium mb-4">
         {caseStudy?.attributes?.Title} : {caseStudy?.attributes?.Description}
         </h1>
         <div className='w-full   flex flex-col'>
-          <div className='flex h-1/2 border-b-2 border-white py-4'>
+          <div className='flex h-1/2 border-b-2 border-white py-8'>
              <div className='w-1/2 flex flex-col'>
                  <p>Location</p>
                  <p>{caseStudy?.attributes?.Location}</p>
@@ -45,7 +45,7 @@ useEffect(() => {
                <p>{caseStudy?.attributes?.Industry}</p>
              </div>
           </div>  
-          <div className='flex h-1/2 py-4'>
+          <div className='flex h-1/2 py-8'>
              <div className='w-full flex flex-col gap-4'>
                  <p>ROI for {caseStudy?.attributes?.Title}</p>
                  <div className='flex gap-4'>
@@ -65,11 +65,14 @@ useEffect(() => {
 
         </div>   
       </div>
+      <div className='lg:w-1/2 w-full flex flex-col justify-center'>
+           
       <img
         alt="ecommerce"
-        className="lg:w-1/2 w-full lg:h-auto h-64  object-center rounded"
+        className=" w-full  h-[95%]  object-center rounded"
         src={`http://localhost:1337${caseStudy?.attributes?.CoverImage?.data.attributes?.url}`}
       />
+      </div>
     </div>
     
   </div>
@@ -131,7 +134,7 @@ useEffect(() => {
           </div>
           <div className="flex flex-wrap -m-4">
           {caseStudy?.attributes?.Solutions?.map((solution) => {
-         return <div className="xl:w-1/2 md:w-1/2 p-4 border-[1px] border-white text-white">
+         return <div className="xl:w-1/2 md:w-1/2 p-4 border-[0.2px] border-white text-white">
          <div className="h-full flex flex-row  items-center sm:justify-start justify-center text-center sm:text-left">
       
        <div className="flex-grow ">
@@ -192,7 +195,7 @@ useEffect(() => {
         </h1>
       
       </div>
-      </div>
+  </div>
 </section>
 </div>
 <Footer/>

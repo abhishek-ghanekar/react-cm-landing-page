@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react'
 // import Navbar from '../../../components/Navbar'
-import Navbar from './Navbar'
+import Navbar from '../../../components/Navbar'
 import { useParams } from 'react-router-dom'
 import axios from 'axios'
 import Markdown from 'react-markdown'
 import Footer from '../../../components/Footer/Footer'
 import formatDate from '../../../utils/ConvertDate'
+import { BlocksRenderer} from '@strapi/blocks-react-renderer';
 const IndividualBlog = () => {
 
     const {id} = useParams();
@@ -21,63 +22,6 @@ const IndividualBlog = () => {
            }) 
     },[])
 
-    const renderText = (textBlock) => {
-      if (textBlock.bold) {
-        return <strong>{textBlock.text}</strong>;
-      }
-      return textBlock.text;
-    };
-    
-    const renderBlock = (block) => {
-      var headingStyles = ""
-      if(block.level == 1) {
-
-         headingStyles = 'text-3xl font-semibold mt-4 mb-2';
-      }else if(block.level == 2) {
-        
-         headingStyles = 'text-2xl font-semibold mt-4 mb-2';
-      }else if(block.level == 3) {
-        
-         headingStyles = 'text-xl font-semibold mt-4 mb-2';
-      }else if(block.level == 4) {
-        
-         headingStyles = 'text-lg font-semibold mt-4 mb-2';
-      }else if(block.level == 5) {
-        
-         headingStyles = 'text-lg font-semibold mt-4 mb-2';
-      }else if(block.level == 6) {
-         headingStyles = 'text-lg font-semibold mt-4 mb-2';
-      }else {
-        
-         headingStyles = 'font-semibold mt-4 mb-2';
-      }
-    
-      switch (block.type) {
-        case 'heading':
-          const HeadingTag = `h${block.level}`;
-          console.log(HeadingTag)
-          return (
-            <HeadingTag key={block.children[0].text} className={headingStyles}>
-              {block.children.map((child, index) => (
-                <React.Fragment key={index}>{renderText(child)}</React.Fragment>
-              ))}
-            </HeadingTag>
-          );
-        case 'paragraph':
-          return (
-            <p key={block.children[0]?.text || Math.random()} className="mb-4">
-              {block.children.map((child, index) => (
-                <React.Fragment key={index}>{renderText(child)}</React.Fragment>
-              ))}
-            </p>
-          );
-        default:
-          return null;
-      }
-    };
-    const ContentRenderer = ({ blocks }) => {
-      return <div>{blocks?.map(renderBlock)}</div>;
-    };
   return (
     <div className='bg-white'>
       
@@ -88,7 +32,7 @@ const IndividualBlog = () => {
       </div>
       <div className='w-full flex flex-col items-center '>
       <div className='w-[80%]'>
-      <img   src={`http://localhost:1337${blogData?.attributes?.CoverImage?.data?.attributes?.formats?.large?.url}`} className='w-full'/>
+      <img   src={`http://localhost:1337${blogData?.attributes?.CoverImage?.data?.attributes?.formats?.large?.url}`} className='w-full h-[500px]'/>
       <div className='w-full py-5'>
 
         <h1 className='text-[41px] font-bold'>{blogData?.attributes?.Title}</h1>
@@ -116,12 +60,14 @@ const IndividualBlog = () => {
              </div>
         
          </div>
-         <div className='w-[80%] h-full   py-4 px-1'>
+         <div className='custom-content w-[80%] h-full   py-4 px-1'>
            {console.log(blogData?.attributes?.BlockContent)}
            {/* <Markdown className="w-full">
             {blogData?.attributes?.Content}
            </Markdown> */}
-           <ContentRenderer blocks={blogData?.attributes?.BlockContent}/>
+           {blogData?.attributes?.BlockContent && 
+           <BlocksRenderer content={blogData?.attributes?.BlockContent} />}
+           {/* <ContentRenderer blocks={blogData?.attributes?.BlockContent}/> */}
          </div>
        </div>
         

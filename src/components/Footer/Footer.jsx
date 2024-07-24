@@ -2,6 +2,7 @@ import React from 'react'
 import CodemischiefLogo from "../../assets/logo/codemischief-logo.png"
 import { ArrowUpOutlined } from '@ant-design/icons'
 import UpArrow from "../../assets/logo/up-arrow.png"
+import { Link } from 'react-router-dom'
 const Footer = () => {
   return (
     
@@ -14,8 +15,11 @@ const Footer = () => {
         <div className='flex flex-col items-center text-center'>
 
         <p className="mt-2  text-white text-2xl">Software Reimagined</p>
+        
         <button className="inline-flex  items-center bg-[#282828] border-[0.5px] border-white text-white font-thin   py-1 px-3 focus:outline-none  rounded text-base mt-4 md:mt-2 w-[70%]">
+          <Link to='/team'>
           Know More
+          </Link>
         </button>
         </div>
       </div>
@@ -26,19 +30,26 @@ const Footer = () => {
           </h2>
           <nav className="list-none mb-10 space-y-3 font-medium">
             <li>
+              <Link to='/services'>
+              
               <a className="text-white hover:text-[#B5D202] cursor-pointer">
                 Services
               </a>
+              </Link>
             </li>
             <li>
-              <a className="text-white hover:text-[#B5D202] cursor-pointer">
+              <Link to='/casestudies'>
+                <a className="text-white hover:text-[#B5D202] cursor-pointer">
                 Case Study
               </a>
+              </Link>
             </li>
             <li>
+              <Link to='/roadmap'>
               <a className="text-white hover:text-[#B5D202] cursor-pointer">
                 Methodology
               </a>
+              </Link>
             </li>
             <li>
               <a className="text-white hover:text-[#B5D202] cursor-pointer">
@@ -58,9 +69,11 @@ const Footer = () => {
           </h2>
           <nav className="list-none mb-10 space-y-3 font-medium">
             <li>
+              <Link to="https://www.linkedin.com/company/codemischief-io/">
               <a className="text-white hover:text-[#B5D202] cursor-pointer">
                 Linkedin
               </a>
+              </Link>
             </li>
             <li>
               <a className="text-white hover:text-[#B5D202] cursor-pointer">

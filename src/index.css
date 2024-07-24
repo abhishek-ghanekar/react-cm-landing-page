@@ -66,41 +66,60 @@ background: radial-gradient(ellipse at center,
     linear-gradient(to bottom, rgba(242, 255, 162, 0.1) 0%, transparent 20%, transparent 80%, rgba(242, 255, 162, 0.05) 100%);
 }
 
-.markdown-container h1,
-.markdown-container h2,
-.markdown-container h3,
-.markdown-container h4,
-.markdown-container h5,
-.markdown-container h6 {
-  margin: 1em 0 0.5em;
-  font-weight: bold;
+.custom-content h1 {
+  font-size: 2.25rem; /* Adjust size as needed */
+  font-weight: 700;
+  line-height: 2.5rem;
+  color: #333; /* Adjust color as needed */
+  margin-bottom: 1rem; /* Adjust spacing as needed */
 }
 
-.markdown-container p {
-  margin: 0.5em 0;
+.custom-content h2 {
+  font-size: 1.875rem;
+  font-weight: 600;
+  line-height: 2.25rem;
+  color: #333;
+  margin-bottom: 0.875rem;
 }
 
-.markdown-container ul,
-.markdown-container ol {
-  padding-left: 1.5em;
+.custom-content h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 2rem;
+  color: #333;
+  margin-bottom: 0.75rem;
 }
 
-.markdown-container blockquote {
-  margin: 1em 0;
-  padding-left: 1em;
-  border-left: 4px solid #ddd;
+.custom-content h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.75rem;
+  color: #333;
+  margin-bottom: 0.625rem;
 }
 
-.markdown-container pre {
-  background: #f5f5f5;
-  padding: 1em;
-  overflow: auto;
+.custom-content h5 {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  color: #333;
+  margin-bottom: 0.5rem;
 }
 
-.markdown-container code {
-  background: #f5f5f5;
-  padding: 0.2em 0.4em;
-  border-radius: 3px;
+.custom-content h6 {
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.25rem;
+  color: #333;
+  margin-bottom: 0.375rem;
 }
 
+/* Paragraphs */
+.custom-content p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: #444; /* Adjust color as needed */
+  margin-bottom: 1rem; /* Adjust spacing as needed */
+}
 

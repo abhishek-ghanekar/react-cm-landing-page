@@ -11,14 +11,16 @@ import { useEffect } from 'react'
 import formatDate from '../../utils/ConvertDate'
 const BlogsListing = () => {
   const [pageNumber,setPageNumber] = useState(1);
+  const [totalPages,setTotalPages] = useState(0);
   const [blogs,setBlogs] = useState([])
   const handlePageChange = () => {
     setPageNumber((prev) => prev + 1)
   }
   useEffect(() => {
     axios.get(`http://localhost:1337/api/blogs?populate=*&pagination[page]=${pageNumber}&pagination[pageSize]=9`).then(result => {
-     console.log(result)
+     console.log(result.data.meta)
      setBlogs(result?.data?.data)
+     setTotalPages(result.data.meta.pagination.pageCount)
      console.log(result?.data?.data)
     }).catch(err=> {
      console.log(err)
@@ -107,9 +109,11 @@ const BlogsListing = () => {
           </button>
             </h1>
             <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
-            <button className="inline-flex text-black items-center bg-[#373737] text-white font-thin   border-0 py-1 px-3 focus:outline-none bg-black  rounded text-base mt-4 md:mt-0 z-50" onClick={() => {
+            <button className={`inline-flex text-black items-center bg-[#373737] text-white font-thin   border-0 py-1 px-3 focus:outline-none bg-black  rounded text-base mt-4 md:mt-0 z-50 ${pageNumber === totalPages || totalPages == 0 ? "bg-slate-500" : "bg-black"}`} onClick={() => {
               setPageNumber((prev) => prev + 1)
-            }}>
+            }}
+            disabled={pageNumber === totalPages || totalPages == 0}
+            >
             Next &nbsp;<ArrowRightOutlined/>
           </button>
             </h1>

@@ -25,7 +25,7 @@ const ContactHero = () => {
             </div>
       
       </div>
-      <div className="lg:w-1/3 md:w-1/2 bg-[#282828] flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0 px-4 relative">
+      <div className="lg:w-1/3 md:w-1/2 bg-[#282828] flex flex-col md:ml-auto w-full md:py-8 py-4 mt-8 md:mt-0 px-4 relative">
       <div className='bg-white h-10 w-10 absolute top-0 right-0 rounded-bl-lb'>
 
       </div>

@@ -7,6 +7,8 @@ import SoftwareForStartups from './SoftwareForStartups/SoftwareForStartups'
 import WebDevelopement from './WebDevelopement/WebDevelopement'
 import EnterpriseSolutions from './EnterpriseSolutions/EnterpriseSolutions'
 import { useLocation } from 'react-router-dom'
+import FadeUpBounce from '../../animations/FadeUpBounce'
+import SlideToTheRight from '../../animations/SlideRight'
 
 const Service = () => {
   const uiRef = useRef();
@@ -37,17 +39,43 @@ const Service = () => {
         <div className='md:p-5'>
           
         <Navbar/>
-
+        
         <ServicesHero uiRef={uiRef} startupRef={startupRef} webRef={webRef} enterpriseRef={enterpriseRef}/>
 
         </div>
       {/* </div> */}
     </div>
     </div>
+    
+    
+
     <UiHero uiRef={uiRef}/>
+
+    
+
+    
+
     <SoftwareForStartups startupRef={startupRef}/>
+
+    
+    
+
+    
+    
+    
+
     <WebDevelopement webRef={webRef}/>
+
+    
+
+    
+    
+
+
+
     <EnterpriseSolutions enterpriseRef={enterpriseRef}/>
+    
+    
   </div>
   <Footer/>
   </div>

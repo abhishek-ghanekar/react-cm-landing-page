@@ -3,7 +3,7 @@ import StepTwo from "../../../assets/roadmap/steptwo.svg"
 const SecondStep = () => {
   return (
     <div className="container px-5 py-8 mx-auto flex justify-center">
-    <div className="lg:w-4/5 mx-auto flex flex-wrap  justify-center">
+    <div className="lg:w-4/5 mx-auto flex flex-wrap-reverse  justify-center">
       
       <div className="lg:w-1/3 w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0">
        

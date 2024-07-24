@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../../components/Navbar'
 import CaseStudyListings from './CaseStudyListings'
+import Footer from '../../components/Footer/Footer'
 
 const CaseStudies = () => {
   return (
@@ -9,6 +10,7 @@ const CaseStudies = () => {
             <Navbar/>
         </div>
       <CaseStudyListings/>
+      <Footer/>
     </div>
   )
 }

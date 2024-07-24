@@ -8,10 +8,13 @@ import axios from "axios"
 import remarkGfm from 'remark-gfm';
 const CaseStudyListings = () => {
   const [caseStudyData,setCaseStudyData] = useState([])
+  const [pageNumber,setPageNumber] = useState(1)
+  const [totalPages,setTotalPages] = useState(0)
   const fetchCaseStudies = () => {
     // we fetch the case studies here
-    axios.get("http://localhost:1337/api/casestudies?populate=*").then(res => {
-       console.log(res)
+    axios.get(`http://localhost:1337/api/casestudies?populate=*&pagination[page]=${pageNumber}&pagination[pageSize]=3`).then(res => {
+       console.log(res?.data?.meta)
+       setTotalPages(res?.data?.meta?.pagination.pageCount)
        setCaseStudyData(res?.data?.data)
        console.log(res.data.data)
     }).catch(err=> console.log(err)) 
@@ -82,6 +85,43 @@ const CaseStudyListings = () => {
                </div>
             })}
           </div>
+
+
+          <div className='w-full flex justify-center'>
+        {/* <div className="flex flex-col items-start justify-between w-[80%] mb-12 text-left">
+            
+            <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
+            <button className="inline-flex text-black items-center bg-[#373737] text-white font-thin   border-0 py-1 px-3 focus:outline-none bg-black  rounded text-base mt-4 md:mt-0 z-50">
+            Next &nbsp;<ArrowRightOutlined/>
+          </button>
+            </h1>
+            
+          </div> */}
+        <div className="flex justify-between w-[80%] mb-12 text-left px-4 py-4">
+           <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
+            <button className={`inline-flex text-black items-center bg-[#373737] text-white font-thin   border-0 py-1 px-3 focus:outline-none bg-black  rounded text-base mt-4 md:mt-0 z-50 ${pageNumber === 1 ? "bg-slate-500" : "bg-black"}`}
+              disabled={pageNumber == 1}
+            onClick={() => {
+              setPageNumber((prev) => prev - 1)
+            }}
+            // disabled={pageNumber === 1}
+            >
+            <ArrowLeftOutlined/>&nbsp; Prev
+          </button>
+            </h1>
+            <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
+            <button className={`inline-flex text-black items-center bg-[#373737] text-white font-thin   border-0 py-1 px-3 focus:outline-none bg-black  rounded text-base mt-4 md:mt-0 z-50 ${pageNumber === totalPages ? "bg-slate-500" : "bg-black"}`} onClick={() => {
+              setPageNumber((prev) => prev + 1)
+            }}
+            disabled={pageNumber == totalPages}
+            
+            >
+            Next &nbsp;<ArrowRightOutlined/>
+          </button>
+            </h1>
+            
+          </div>
+        </div>
         </div>
       </section>
     
