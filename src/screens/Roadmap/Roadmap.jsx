@@ -7,6 +7,7 @@ import ForthStep from './ForthStep/ForthStep'
 import FifthStep from './FifthStep/FifthStep'
 import { Link } from 'react-router-dom'
 import Footer from "../../components/Footer/Footer"
+import FadeUpBounce from '../../animations/FadeUpBounce'
 const Roadmap = () => {
   return (
     <>
@@ -16,11 +17,28 @@ const Roadmap = () => {
       <div className='bg-[#282828]'>
         <Navbar/>
       </div>
+      <FadeUpBounce>
+
       <FirstStep/>
+      </FadeUpBounce>
+      <FadeUpBounce>
+
       <SecondStep/>
+      </FadeUpBounce>
+      <FadeUpBounce>
+
       <ThirdStep/>
+      </FadeUpBounce>
+      <FadeUpBounce>
+        
       <ForthStep/>
+      </FadeUpBounce>
+      <FadeUpBounce>
+
       <FifthStep/>
+      </FadeUpBounce>
+      <FadeUpBounce>
+
       
       <div className="flex flex-col gap-3 text-center w-[80%] mb-10 items-center mx-auto">
         <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900">
@@ -37,6 +55,7 @@ const Roadmap = () => {
 
         
       </div>
+      </FadeUpBounce>
       <Footer/>
       </div>
     </>

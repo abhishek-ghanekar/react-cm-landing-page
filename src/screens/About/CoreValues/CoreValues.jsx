@@ -1,5 +1,6 @@
 import React from 'react'
 import CoreIcon from "../../../assets/about/core-1.png"
+import FadeUpBounce from '../../../animations/FadeUpBounce'
 const CoreValues = () => {
   return (
     <>
@@ -13,8 +14,14 @@ const CoreValues = () => {
         </div>
       </div>
       <div class="flex flex-wrap -m-4">
+
+        
       <div class="lg:w-1/3 sm:w-1/2 p-4 flex justify-center">
-      <div className="bg-[rgb(40,40,40)] p-6 rounded-lg relative flex flex-col items-center w-[60%]">
+        <FadeUpBounce>
+          <div className='flex justify-center '>
+
+          
+      <div className="bg-[rgb(40,40,40)] p-6 rounded-lg relative flex flex-col items-center md:w-[60%] w-full">
          <div className='w-10 h-10 bg-[#F8F8EF] absolute top-0 left-0 rounded-br-lg'>
 
          </div>
@@ -31,9 +38,17 @@ const CoreValues = () => {
             We navigate your software journey with you, from brainstorming to blast-off.
             </p>
           </div>
+          </div>
+      </FadeUpBounce>
       </div>
+
+      
       <div class="lg:w-1/3 sm:w-1/2 p-4 flex justify-center">
-      <div className="bg-[#282828] p-6 rounded-lg w-[60%] relative flex flex-col items-center">
+      <FadeUpBounce>
+        <div className='flex justify-center'>
+
+        
+      <div className="bg-[#282828] p-6 rounded-lg md:w-[60%] w-full relative flex flex-col items-center">
       <div className='w-10 h-10 bg-[#F8F8EF] absolute top-0 left-0 rounded-br-lg'>
 
 </div>
@@ -51,9 +66,17 @@ const CoreValues = () => {
                We move fast, adapt quickly, and deliver on your ever-evolving needs.
             </p>
           </div>
+          </div>
+      </FadeUpBounce>
       </div>
+
+      
       <div class="lg:w-1/3 sm:w-1/2 p-4 flex justify-center ">
-      <div className="bg-[#282828] p-6 rounded-lg w-[60%] relative flex flex-col items-center">
+      <FadeUpBounce>
+        <div className='flex justify-center'>
+
+        
+      <div className="bg-[#282828] p-6 rounded-lg md:w-[60%] w-full relative flex flex-col items-center">
       <div className='w-10 h-10 bg-[#F8F8EF] absolute top-0 left-0 rounded-br-lg'>
 
          </div>
@@ -70,9 +93,17 @@ const CoreValues = () => {
             We bring both passion and expertise to create software that's powerful and delightful.
             </p>
           </div>
+          </div>
+      </FadeUpBounce>
       </div>
+
+      
       <div class="lg:w-1/3 sm:w-1/2 p-4 flex justify-center">
-      <div className="bg-[#282828] p-6 rounded-lg w-[60%] relative flex flex-col items-center">
+      <FadeUpBounce>
+        <div className='flex justify-center'>
+
+        
+      <div className="bg-[#282828] p-6 rounded-lg md:w-[60%] w-full relative flex flex-col items-center">
       <div className='w-10 h-10 bg-[#F8F8EF] absolute top-0 left-0 rounded-br-lg'>
 
 </div>
@@ -89,9 +120,16 @@ const CoreValues = () => {
                We're invested in your success, building software that grows alongside you.
             </p>
           </div>
+          </div>
+      </FadeUpBounce>
       </div>
+
+      
       <div class="lg:w-1/3 sm:w-1/2 p-4 flex justify-center">
-      <div className="bg-[#282828] p-6 rounded-lg w-[60%] relative flex flex-col items-center">
+      <FadeUpBounce>
+        <div className='flex justify-center'>
+           
+      <div className="bg-[#282828] p-6 rounded-lg md:w-[60%] w-full relative flex flex-col items-center">
       <div className='w-10 h-10 bg-[#F8F8EF] absolute top-0 left-0 rounded-br-lg'>
 
 </div>
@@ -108,6 +146,8 @@ const CoreValues = () => {
                We're invested in your success, building software that grows alongside you.
             </p>
           </div>
+          </div>
+      </FadeUpBounce>
       </div>
       
     </div>

@@ -1,16 +1,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-const FadeUpBounce = ({ children }) => {
+const FadeIn = ({ children }) => {
   const variants = {
-    hidden: { opacity: 0, y: 100 },
+    hidden: { opacity: 0 },
     visible: {
       opacity: 1,
-      y: 0,
       transition: {
         duration: 0.8,
-        type: 'spring',
-        stiffness: 100,
       },
     },
   };
@@ -19,7 +16,7 @@ const FadeUpBounce = ({ children }) => {
     <motion.div
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, amount: 0.1 }}
+      viewport={{ once: false, amount: 0.1 }}
       variants={variants}
     >
       {children}
@@ -27,4 +24,4 @@ const FadeUpBounce = ({ children }) => {
   );
 };
 
-export default FadeUpBounce;
+export default FadeIn;

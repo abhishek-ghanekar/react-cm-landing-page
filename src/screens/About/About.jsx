@@ -5,6 +5,7 @@ import AboutHero from './AboutHero/AboutHero'
 import WhyChooseUs from './WhyChooseUs/WhyChooseUs'
 import CoreValues from './CoreValues/CoreValues'
 import MeetTheTeam from './MeetTheTeam/MeetTheTeam'
+import FadeUpBounce from '../../animations/FadeUpBounce'
 
 const About = () => {
   return (
@@ -20,7 +21,10 @@ const About = () => {
   </div>
   <WhyChooseUs/>
   <CoreValues/>
+  <FadeUpBounce>
+
   <MeetTheTeam/>
+  </FadeUpBounce>
   <Footer/>
     </div>
 </>

@@ -4,7 +4,7 @@ const ContactHero = () => {
   return (
     <section className="text-gray-600 body-font relative">
     <div className="container px-5 py-8 mx-auto flex sm:flex-nowrap flex-wrap">
-      <div className="lg:w-2/3 md:w-1/2  rounded-lg overflow-hidden sm:mr-10 p-10 flex items-start justify-start relative">
+      <div className="lg:w-2/3 md:w-1/2 w-full rounded-lg overflow-hidden sm:mr-10 md:p-10 flex items-start justify-start relative">
          
           <div className="h-full flex flex-col mb-8 lg:items-start items-center lg:justify-between">
              

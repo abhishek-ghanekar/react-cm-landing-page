@@ -5,6 +5,8 @@ import JobDescription from './JobDescription/JobDescription'
 import WhyJoin from './WhyJoin/WhyJoin'
 import Footer from '../../components/Footer/Footer'
 import Openings from './Openings/Openings'
+import FadeUpBounce from '../../animations/FadeUpBounce'
+import FadeIn from '../../animations/FadeIn'
 
 const Careers = () => {
   return (
@@ -19,7 +21,13 @@ const Careers = () => {
     <CareerHero/>
     <JobDescription/>
     <WhyJoin/>
+    <FadeIn>
+
     <Openings/>
+    </FadeIn>
+    <FadeUpBounce>
+
+    
     <div className='w-full flex justify-center mb-4'>
 
     <div className='w-4/5 text-center'>
@@ -28,6 +36,7 @@ const Careers = () => {
        </h1>
     </div>
     </div>
+    </FadeUpBounce>
     <Footer/>
     </div>
     </>

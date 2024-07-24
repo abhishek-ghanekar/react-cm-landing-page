@@ -21,11 +21,11 @@ const CaseStudyListings = () => {
   }
   useEffect(() => {
     fetchCaseStudies()
-  },[])
+  },[pageNumber])
 
   return (
       <section className="text-gray-600 body-font">
-        <div className="container px-5 py-24 mx-auto flex flex-col items-center">
+        <div className="container md:px-5 py-24 mx-auto flex flex-col items-center">
          <div className="flex flex-col  justify-between w-[90%] mb-12 text-left">
             <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
              <ArrowLeftOutlined/> Case Studies
@@ -36,12 +36,12 @@ const CaseStudyListings = () => {
 
             </p>
           </div>
-          <div className="flex flex-col items-center -m-4 w-[90%]">
+          <div className="flex flex-col items-center -m-4 md:w-[90%] ">
             {console.log(caseStudyData.length)}
             {caseStudyData?.map((item) => {
-               return <div className="xl:w-[70%] md:w-[70%] p-4">
+               return <div className="xl:w-[70%] md:w-[70%] w-full  md:p-4">
                             <section className="text-gray-600 body-font overflow-hidden ">
-                  <div className="container  px-5  mx-auto">
+                  <div className="container  md:px-5  mx-auto">
                     <div className="w-full bg-[#282828] rounded-md p-4 mx-auto flex flex-wrap">
                       <div className="lg:w-1/2 w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0">
                         

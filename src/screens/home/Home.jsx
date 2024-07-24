@@ -5,6 +5,7 @@ import WorkWithUs from './WorkWithUs/WorkWithUs'
 import Services from './Services/Services'
 import Footer from '../../components/Footer/Footer'
 import SuccessStories from './SuccessStories/SuccessStories'
+import FadeUpBounce from '../../animations/FadeUpBounce'
 
 const Home = () => {
   return (
@@ -29,9 +30,14 @@ const Home = () => {
       </div>
     </div>
     <div className='bg-white'>
+    <FadeUpBounce>
 
     <WorkWithUs/>
+    </FadeUpBounce>
+    <FadeUpBounce>
+
     <Services/>
+    </FadeUpBounce>
     <SuccessStories/>
     
 

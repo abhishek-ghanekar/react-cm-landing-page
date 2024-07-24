@@ -5,6 +5,7 @@ import Team2 from "../../../assets/about/team2.png"
 import Team3 from "../../../assets/about/team3.png"
 import Team4 from "../../../assets/about/team4.png"
 import Team5 from "../../../assets/about/team5.png"
+import FadeUpBounce from '../../../animations/FadeUpBounce'
 const MeetTheTeam = () => {
   return (
     <section className="text-gray-600 body-font ">
@@ -17,9 +18,15 @@ const MeetTheTeam = () => {
         </div>
       </div>
       <div class="flex flex-wrap -m-4">
+
+        
       <div class="lg:w-1/3 sm:w-1/2 p-4 flex justify-center w-full">
-          <div className=" p-6 rounded-lg relative flex flex-col items-center w-[60%]  border-[0.8px] border-black">
+          
+
+          
+          <div className=" p-6 rounded-lg relative flex flex-col items-center md:w-[60%] w-full  border-[0.8px] border-black">
          
+        
             <img
               className="h-full w-full rounded object-center mb-6"
               src={Team1}
@@ -40,10 +47,12 @@ const MeetTheTeam = () => {
 </div>
               
             </div>
+      
           </div>
+          
       </div>
       <div class="lg:w-1/3 sm:w-1/2 p-4 flex justify-center w-full">
-      <div className="border-[0.8px] border-black p-6 rounded-lg w-[60%] relative flex flex-col items-center">
+      <div className="border-[0.8px] border-black p-6 rounded-lg md:w-[60%] w-full relative flex flex-col items-center">
      
           <img
               className="h-full w-full rounded object-center mb-6"
@@ -68,7 +77,7 @@ const MeetTheTeam = () => {
           </div>
       </div>
       <div class="lg:w-1/3 sm:w-1/2 p-4 flex justify-center w-full">
-      <div className="border-[0.8px] border-black p-6 rounded-lg w-[60%] relative flex flex-col items-center">
+      <div className="border-[0.8px] border-black p-6 rounded-lg md:w-[60%] w-full relative flex flex-col items-center">
       
          <img
               className="h-full w-full rounded object-center mb-6"
@@ -91,7 +100,7 @@ const MeetTheTeam = () => {
           </div>
       </div>
       <div class="lg:w-1/3 sm:w-1/2 p-4 flex justify-center w-full">
-      <div className="border-[0.8px] border-black p-6 rounded-lg w-[60%] relative flex flex-col items-center">
+      <div className="border-[0.8px] border-black p-6 rounded-lg md:w-[60%] w-full relative flex flex-col items-center">
       
           <img
               className="h-full w-full rounded object-center mb-6"
@@ -113,7 +122,7 @@ const MeetTheTeam = () => {
           </div>
       </div>
       <div class="lg:w-1/3 sm:w-1/2 p-4 flex justify-center w-full">
-          <div className="border-[0.8px] border-black p-6 rounded-lg w-[60%] relative flex flex-col items-center">
+          <div className="border-[0.8px] border-black p-6 rounded-lg md:w-[60%] w-full relative flex flex-col items-center">
       
           <img
               className="h-full w-full rounded object-center mb-6"

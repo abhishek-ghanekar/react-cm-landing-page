@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../../components/Navbar'
 import ContactHero from './ContactHero/ContactHero'
+import Footer from '../../components/Footer/Footer'
 
 const Contact = () => {
   return (
@@ -11,6 +12,7 @@ const Contact = () => {
     <Navbar/>
   </div>
   <ContactHero/>
+  <Footer/>
     </div>
 </>
 

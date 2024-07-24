@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import CodeMischiefLogo from "../assets/logo/codemischief-logo.png"
 import { Link } from 'react-router-dom';
+import FadeIn from '../animations/FadeIn';
 const Navbar = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -69,7 +70,9 @@ const Navbar = () => {
         </Link>
       </div>
       {/* Mobile Menu */}
-      <div className={`lg:hidden ${isMobileMenuOpen ? 'block' : 'hidden'} mt-4`}>
+      {isMobileMenuOpen && 
+      <FadeIn>
+      <div className={`mobile menu lg:hidden bg-[#282828]  mt-4`}>
         <Link to='/services'>
 
             <a href="#" className="block text-white px-2 py-1">Services</a>
@@ -107,8 +110,9 @@ const Navbar = () => {
             <a href="#" className="block px-4 py-2 text-white hover:bg-gray-700">Career</a>
           </div> */}
         </div>
-        <button className="bg-blue-500 text-white px-4 py-2 mt-2 rounded-md hover:bg-blue-600 w-full">Contact</button>
-      </div>
+        <button className="bg-black text-white px-4 py-2 mt-2 rounded-md  hover:border-white w-full">Contact</button>
+      </div> </FadeIn>}
+      
     </nav>
   );
 };
