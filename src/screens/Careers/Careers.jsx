@@ -19,7 +19,10 @@ const Careers = () => {
 
     </div>
     <CareerHero/>
+    <FadeUpBounce>
+
     <JobDescription/>
+    </FadeUpBounce>
     <WhyJoin/>
     <FadeIn>
 

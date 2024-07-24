@@ -38,15 +38,15 @@ const BlogsListing = () => {
 
             </p>
           </div>
-          <div className="flex flex-col items-center -m-4">
-            <div className="xl:w-[80%] md:w-[80%] p-4">
+          <div className="flex flex-col items-center w-[80%] -m-4 ">
+            <div className="w-full py-4">
             <section className="text-gray-600 body-font overflow-hidden ">
-        <div className="container  px-5  mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className=" ">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 ">
           {blogs.map((item,index) => {
             return <Link to={`/blog/${item.id}`}>
-             <div class="p-4">
-            <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+             <div className="">
+            <div className="h-full w-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
               <img
                 className="lg:h-48 md:h-36 w-full object-fill  object-center"
                 src={`http://localhost:1337${item?.attributes?.CoverImage?.data?.attributes?.formats?.medium?.url}`}

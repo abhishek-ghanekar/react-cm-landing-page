@@ -110,7 +110,10 @@ const Navbar = () => {
             <a href="#" className="block px-4 py-2 text-white hover:bg-gray-700">Career</a>
           </div> */}
         </div>
+        <Link to='/contact'>
+        
         <button className="bg-black text-white px-4 py-2 mt-2 rounded-md  hover:border-white w-full">Contact</button>
+        </Link>
       </div> </FadeIn>}
       
     </nav>

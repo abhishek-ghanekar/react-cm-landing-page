@@ -27,8 +27,8 @@ useEffect(() => {
 
     
     <section className="text-white body-font overflow-hidden w-full ">
-  <div className="container px-5 py-8 mx-auto flex justify-center">
-    <div className="lg:w-4/5 w-full  bg-[#282828] rounded-lg mx-auto flex flex-wrap justify-center">
+  <div className="container sm:px-5 py-8 mx-auto flex justify-center">
+    <div className="lg:w-4/5 w-full  bg-[#282828] py-4 rounded-lg mx-auto flex flex-wrap justify-center">
     <div className="lg:w-1/2 px-4 w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0">
         
         <h1 className="text-white text-3xl title-font font-medium mb-4">

@@ -19,8 +19,14 @@ const About = () => {
       <AboutHero/>
     </div>
   </div>
+  <FadeUpBounce>
+
   <WhyChooseUs/>
+  </FadeUpBounce>
+  <FadeUpBounce>
+
   <CoreValues/>
+  </FadeUpBounce>
   <FadeUpBounce>
 
   <MeetTheTeam/>

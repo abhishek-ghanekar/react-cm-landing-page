@@ -10,7 +10,7 @@ const ThirdStep = () => {
         src={StepOne}
       />
       <div className="lg:w-1/3 w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0">
-        <div className='w-full flex gap-2 justify-center md:justify-between items-center'>
+        <div className='w-full flex gap-2 justify-center lg:justify-between items-center'>
 
         <h1 className="text-gray-200 text-[40px] title-font font-bold mb-4 leading-[120%]">
            03
