@@ -73,7 +73,7 @@ const WhyChooseUs = () => {
                 Expert Team
               </h2>
               <p className="leading-relaxed">
-                We believe software should be an investment, not a cost. We focus on developing solutions that deliver tangible results and a strong return on investment (ROI).
+                  Our team of experienced developers possesses a wide range of expertise and stays up-to-date with the latest technologies.
               </p>
             </div>
           </div>

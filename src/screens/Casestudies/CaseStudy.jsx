@@ -5,11 +5,12 @@ import axios from 'axios'
 import { Link } from 'react-router-dom'
 import { ArrowRightOutlined } from '@ant-design/icons'
 import Footer from '../../components/Footer/Footer'
+const BACKEND_URL = import.meta.env.VITE_STRAPI_URL
 const CaseStudy = () => {
     const {id} = useParams()
     const [caseStudy,setCaseStudy] = useState({})
     const fetchData = () => {
-        axios.get(`http://localhost:1337/api/casestudies/${id}?populate=*`).then(result => {
+        axios.get(`${BACKEND_URL}/api/casestudies/${id}?populate=*`).then(result => {
             console.log(result.data.data)
             setCaseStudy(result.data.data)
         }).catch(err => {
@@ -70,7 +71,7 @@ useEffect(() => {
       <img
         alt="ecommerce"
         className=" w-full  h-[95%]  object-center rounded"
-        src={`http://localhost:1337${caseStudy?.attributes?.CoverImage?.data.attributes?.url}`}
+        src={`${BACKEND_URL}${caseStudy?.attributes?.CoverImage?.data.attributes?.url}`}
       />
       </div>
     </div>

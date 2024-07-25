@@ -7,6 +7,7 @@ import RightArrow from "../../../assets/logo/right-arrow.svg";
 import axios from 'axios';
 import { motion, AnimatePresence } from 'framer-motion';
 import FadeUpBounce from '../../../animations/FadeUpBounce';
+const BACKEND_URL = import.meta.env.VITE_STRAPI_URL
 
 const SuccessStories = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -15,7 +16,7 @@ const SuccessStories = () => {
 
   const fetchAllCaseStudies = () => {
     // Here we fetch all the case studies from strapi backend
-    axios.get("http://localhost:1337/api/casestudies?populate=*")
+    axios.get(`${BACKEND_URL}/api/casestudies?populate=*`)
       .then(result => {
         console.log(result?.data?.data);
         setCaseStudies(result?.data?.data);
@@ -77,7 +78,7 @@ const SuccessStories = () => {
               <img
                 alt="ecommerce"
                 className="lg:w-1/2 w-full lg:h-[500px] h-[500px] object-cover object-center rounded"
-                src={`http://localhost:1337${caseStudies[currentIndex]?.attributes?.CoverImage?.data.attributes?.url}`}
+                src={`${BACKEND_URL}${caseStudies[currentIndex]?.attributes?.CoverImage?.data.attributes?.url}`}
                 />
             </motion.div>
           )}

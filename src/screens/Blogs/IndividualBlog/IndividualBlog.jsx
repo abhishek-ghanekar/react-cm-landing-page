@@ -7,6 +7,7 @@ import Markdown from 'react-markdown'
 import Footer from '../../../components/Footer/Footer'
 import formatDate from '../../../utils/ConvertDate'
 import { BlocksRenderer} from '@strapi/blocks-react-renderer';
+const BACKEND_URL = import.meta.env.VITE_STRAPI_URL
 const IndividualBlog = () => {
 
     const {id} = useParams();
@@ -14,7 +15,7 @@ const IndividualBlog = () => {
     const item = {}
     const [blogData,setBlogdData] = useState({})
     useEffect(() => {
-        axios.get(`http://localhost:1337/api/blogs/${id}?populate=*`).then(result => {
+        axios.get(`${BACKEND_URL}/api/blogs/${id}?populate=*`).then(result => {
             setBlogdData(result.data.data)
             console.log(result.data.data)
            }).catch(err=> {
@@ -32,7 +33,7 @@ const IndividualBlog = () => {
       </div>
       <div className='w-full flex flex-col items-center '>
       <div className='w-[80%]'>
-      <img   src={`http://localhost:1337${blogData?.attributes?.CoverImage?.data?.attributes?.formats?.large?.url}`} className='w-full h-[500px]'/>
+      <img   src={`${BACKEND_URL}${blogData?.attributes?.CoverImage?.data?.attributes?.formats?.large?.url}`} className='w-full h-[500px]'/>
       <div className='w-full py-5'>
 
         <h1 className='text-[41px] font-bold'>{blogData?.attributes?.Title}</h1>

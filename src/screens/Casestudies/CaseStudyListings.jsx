@@ -6,13 +6,14 @@ import Markdown from 'react-markdown'
 import useFetch from '../../hooks/useFetch'
 import axios from "axios"
 import remarkGfm from 'remark-gfm';
+const BACKEND_URL = import.meta.env.VITE_STRAPI_URL
 const CaseStudyListings = () => {
   const [caseStudyData,setCaseStudyData] = useState([])
   const [pageNumber,setPageNumber] = useState(1)
   const [totalPages,setTotalPages] = useState(0)
   const fetchCaseStudies = () => {
     // we fetch the case studies here
-    axios.get(`http://localhost:1337/api/casestudies?populate=*&pagination[page]=${pageNumber}&pagination[pageSize]=3`).then(res => {
+    axios.get(`${BACKEND_URL}/api/casestudies?populate=*&pagination[page]=${pageNumber}&pagination[pageSize]=3`).then(res => {
        console.log(res?.data?.meta)
        setTotalPages(res?.data?.meta?.pagination.pageCount)
        setCaseStudyData(res?.data?.data)
@@ -76,7 +77,7 @@ const CaseStudyListings = () => {
                       <img
                         alt="ecommerce"
                         className="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded"
-                        src={`http://localhost:1337${item.attributes?.CoverImage?.data.attributes?.url}`}
+                        src={`${BACKEND_URL}${item.attributes?.CoverImage?.data.attributes?.url}`}
                       />
                     </div>
                   </div>

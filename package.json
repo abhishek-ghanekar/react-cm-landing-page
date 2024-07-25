@@ -13,6 +13,7 @@
     "@ant-design/icons": "^5.3.7",
     "@strapi/blocks-react-renderer": "^1.0.1",
     "axios": "^1.7.2",
+    "dotenv": "^16.4.5",
     "flowbite": "^2.4.1",
     "framer-motion": "^11.3.7",
     "react": "^18.3.1",

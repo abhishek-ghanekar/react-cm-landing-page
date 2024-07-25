@@ -9,6 +9,7 @@ import Blog4 from "../../assets/blogs/blog-4.svg"
 import axios from 'axios'
 import { useEffect } from 'react'
 import formatDate from '../../utils/ConvertDate'
+const BACKEND_URL = import.meta.env.VITE_STRAPI_URL
 const BlogsListing = () => {
   const [pageNumber,setPageNumber] = useState(1);
   const [totalPages,setTotalPages] = useState(0);
@@ -17,7 +18,7 @@ const BlogsListing = () => {
     setPageNumber((prev) => prev + 1)
   }
   useEffect(() => {
-    axios.get(`http://localhost:1337/api/blogs?populate=*&pagination[page]=${pageNumber}&pagination[pageSize]=9`).then(result => {
+    axios.get(`${BACKEND_URL}/api/blogs?populate=*&pagination[page]=${pageNumber}&pagination[pageSize]=9`).then(result => {
      console.log(result.data.meta)
      setBlogs(result?.data?.data)
      setTotalPages(result.data.meta.pagination.pageCount)
@@ -49,7 +50,7 @@ const BlogsListing = () => {
             <div className="h-full w-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
               <img
                 className="lg:h-48 md:h-36 w-full object-fill  object-center"
-                src={`http://localhost:1337${item?.attributes?.CoverImage?.data?.attributes?.formats?.medium?.url}`}
+                src={`${BACKEND_URL}${item?.attributes?.CoverImage?.data?.attributes?.formats?.medium?.url}`}
                 alt="blog"
               />
               <div className="p-6">
