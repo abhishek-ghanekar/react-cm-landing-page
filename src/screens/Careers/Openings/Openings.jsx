@@ -1,6 +1,16 @@
-import React from 'react'
-
+import React, { useEffect } from 'react'
+import axios from 'axios'
+const BACKEND_URL = import.meta.env.VITE_STRAPI_URL
 const Openings = () => {
+  const fetchJobOpenings = () => {
+     axios.get(`${BACKEND_URL}/api/job-openings?populate=*`).then(result => {
+        console.log('hey')
+        console.log(result.data.data)
+     })
+  }
+  useEffect(() => {
+    fetchJobOpenings()
+  },[])
   return (
     <section className="text-gray-600 body-font ">
   <div className="container px-5 pt-24 pb-8 mx-auto flex justify-center">
